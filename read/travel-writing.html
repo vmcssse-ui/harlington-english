@@ -1,0 +1,1245 @@
+<!-- © 2026 Dr Vitor Merissi de Carvalho · Edu.Ai SV Digital — Edu.Ai Ecosystem framework. All rights reserved. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Across the Water · Non-fiction and Travel Writing · Year 7 English</title>
+<meta name="description" content="A boy and his gran leave London by train and ferry, cross a border, and find a second home.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{
+  /* Page B wears forest — a warm, high-contrast READING accent. The text is never
+     withheld here, so nothing in the palette says "ears first". */
+  --ac:#1F6F5F; --ac-soft:#DDEDE8; --ac-deep:#163F38; --ac-ink:#A6D9CB; --ac-sub:#CDE8DF;
+  --hl-s:#E6F2EE;            /* current sentence */
+  --hl-w:#F6C453;            /* current word — warm amber on ink */
+  --amber:#B97F1E; --amber-bg:#F6E3BC; --amber-solid:#E8A33D;
+  --violet:#6B5B95; --violet-bg:#E8E4F1;
+  --teal:#25706B;   --teal-bg:#D9EBEA;
+  --coral:#C94F3D;  --coral-bg:#F6E1DD;
+  --navy:#1F3557;   --navy-bg:#DDE4EE; --soft:#F2F4F7;
+  --good:#2E7D4F;   --good-bg:#DCEFE3;
+  --warn:#1F6F5F;   --warn-bg:#EEF6F3;
+  --ink:#232F3D; --head:#0F2740; --muted:#5C6874;
+  --paper:#FBFAF6; --page:#FFFFFF; --rule:#D9DFE6; --box:#FBFCFD; --quote:#F4F6F8;
+  --desk1:#EEF4F1; --desk2:#E0ECE7;
+  --ui:"Atkinson Hyperlegible",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --read:"Atkinson Hyperlegible",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:clamp(600px,74vw,1000px);
+  --fs:clamp(16px,.30vw + 14.8px,19px);
+  --fs-sm:clamp(13.5px,.22vw + 12.6px,15.5px);
+  --fs-lg:clamp(16.5px,.42vw + 14.8px,20.5px);
+  --pad-card:clamp(15px,1.2vw,24px);
+  --tap:44px;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
+     font-size:var(--fs);line-height:1.6;-webkit-text-size-adjust:100%}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:4px}
+button{touch-action:manipulation}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(18px,4vw,36px)}
+.howto p,.mbody>p,.mbody>ul{max-width:70ch}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- chapter head ---------- */
+.chead{background:var(--ac-deep);color:#fff;padding:clamp(30px,6vw,52px) 0 clamp(24px,4vw,34px);margin-bottom:clamp(24px,4vw,38px)}
+.eyebrow{font-size:clamp(12.5px,.5vw + 11px,15px);font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+         color:var(--ac-ink);margin:0 0 12px}
+.chead h1{font-size:clamp(30px,4.6vw,58px);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin:0 0 10px}
+.chead .sub{margin:0 0 22px;color:var(--ac-sub);font-size:var(--fs-lg);max-width:64ch}
+.rail{display:flex;gap:5px;margin:0 0 8px}
+.rail i{flex:1;height:clamp(5px,.42vw,8px);border-radius:3px;background:rgba(255,255,255,.22)}
+.rail i.on{background:var(--hl-w)}
+.railtext{margin:0;font-size:var(--fs-sm);color:var(--ac-ink);font-weight:700;letter-spacing:.04em}
+
+/* ---------- review banner (teacher tool) ---------- */
+.review[hidden]{display:none}
+.review{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;
+        border:1px dashed var(--ac);background:var(--warn-bg);border-radius:10px;
+        padding:clamp(13px,1.2vw,20px) clamp(15px,1.4vw,24px);margin:0 0 22px}
+.rvtext{flex:1 1 260px;min-width:0}
+.rvtext b{display:block;font-size:var(--fs);font-weight:800;color:var(--head)}
+.rvtext span{display:block;font-size:var(--fs-sm);color:var(--muted);margin-top:3px;line-height:1.45}
+.rvbtns{display:flex;gap:9px;flex-wrap:wrap}
+.review button{font:inherit;font-size:var(--fs-sm);font-weight:700;cursor:pointer;background:#fff;min-height:var(--tap);
+               border:1.5px solid var(--head);color:var(--head);border-radius:7px;padding:9px 15px}
+.review button:hover{background:var(--head);color:#fff}
+#rvreset{border-color:var(--rule);color:var(--muted)}
+
+/* ---------- the desk ---------- */
+.desk{margin:0 0 34px;padding:clamp(24px,3.4vw,52px) clamp(18px,3vw,46px);border-radius:14px;
+      background:linear-gradient(170deg,var(--desk1),var(--desk2));border:1px solid var(--rule);
+      display:flex;gap:clamp(20px,4vw,34px);align-items:center;flex-wrap:wrap}
+.deskcopy{flex:1 1 240px;min-width:0}
+.deskcopy h2{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+             color:var(--muted);margin:0 0 10px}
+.deskcopy p{margin:0 0 16px;font-size:var(--fs);color:#3A4756;max-width:46ch}
+.deskcopy .rungs{list-style:none;padding:0;margin:0 0 18px;font-size:var(--fs-sm)}
+.deskcopy .rungs li{display:flex;gap:9px;align-items:center;padding:0;color:var(--muted)}
+.deskcopy .rungs button{display:flex;gap:9px;align-items:center;width:100%;text-align:left;font:inherit;
+                        background:none;border:0;padding:6px 0;min-height:var(--tap);cursor:pointer;color:inherit;border-radius:6px}
+.deskcopy .rungs b{flex:none;width:clamp(22px,1.5vw,26px);height:clamp(22px,1.5vw,26px);border-radius:50%;
+                   background:var(--rule);color:#fff;font-size:11px;display:grid;place-items:center}
+.deskcopy .rungs li.on b{background:var(--ac)}
+.deskcopy .rungs li.on{color:var(--head);font-weight:700}
+.deskcopy .rungs li.ok b{background:var(--good);font-size:0}
+.deskcopy .rungs li.ok b::after{content:"✓";font-size:12px}
+.bookobj{flex:0 0 auto;width:clamp(150px,19vw,264px);border:0;padding:0;background:none;cursor:pointer;perspective:900px}
+.bookobj .slab{position:relative;aspect-ratio:3/4;border-radius:3px 9px 9px 3px;
+      background:linear-gradient(115deg,#174F45,#237A69 58%,#1B5C4F);
+      box-shadow:0 18px 34px rgba(20,45,40,.34),0 3px 8px rgba(20,45,40,.24);
+      transform:rotateY(-13deg) rotateX(3deg);transform-origin:left center;
+      transition:transform .3s cubic-bezier(.3,.1,.2,1),box-shadow .3s;
+      display:flex;flex-direction:column;justify-content:space-between;
+      padding:clamp(14px,3vw,20px) clamp(12px,2.6vw,17px) clamp(14px,3vw,20px) clamp(18px,3.4vw,24px);
+      overflow:hidden;text-align:left}
+.bookobj:hover .slab,.bookobj:focus-visible .slab{transform:rotateY(-7deg) rotateX(2deg) translateY(-4px)}
+.bookobj .slab::before{content:"";position:absolute;left:0;top:0;bottom:0;width:11px;
+      background:linear-gradient(90deg,rgba(0,0,0,.42),rgba(255,255,255,.10) 62%,rgba(0,0,0,.16))}
+.bookobj .slab::after{content:"";position:absolute;right:0;top:5px;bottom:5px;width:6px;border-radius:0 3px 3px 0;
+      background:repeating-linear-gradient(90deg,#FBFAF6 0 1px,#D9DDE2 1px 2px)}
+.bookobj .bk{font-size:clamp(9.5px,.62vw,12.5px);font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+             color:var(--hl-w);margin:0}
+.bookobj .bt{font-size:clamp(15px,2.0vw,24px);font-weight:800;line-height:1.15;color:#fff;
+             letter-spacing:-.01em;margin:8px 0 0}
+.bookobj .bm{font-size:clamp(10px,.62vw,13px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+             color:var(--ac-ink);margin:0}
+.bookobj .open{display:block;margin-top:14px;font-size:var(--fs-sm);font-weight:800;color:var(--ac);text-align:center}
+.earsband{flex:0 0 100%;display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--ac-soft);
+          border-radius:9px;padding:clamp(12px,1vw,18px) clamp(14px,1.2vw,22px)}
+.earsband span{font-size:26px}
+.earsband p{margin:0;font-size:var(--fs-sm);color:var(--muted);max-width:none}
+.earsband b{color:var(--ac)}
+
+/* ---------- module stack ---------- */
+.howto{background:var(--box);border:1px solid var(--rule);border-radius:10px;
+       padding:clamp(18px,3.5vw,26px);margin:0 0 28px}
+.howto h2{font-size:clamp(14px,.5vw + 12.6px,17px);font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+          color:var(--muted);margin:0 0 12px}
+.howto p{margin:0 0 12px}
+.howto p:last-child{margin:0}
+.mod{border:1px solid var(--rule);border-left:5px solid var(--c);border-radius:9px;
+     background:#fff;margin:0 0 12px;overflow:hidden}
+.mhead{display:flex;gap:clamp(13px,1vw,20px);align-items:flex-start;width:100%;text-align:left;
+       background:none;border:0;cursor:pointer;padding:var(--pad-card);font:inherit;color:var(--head);min-height:var(--tap)}
+.mhead:hover{background:var(--box)}
+.mnum{flex:none;width:clamp(27px,2.1vw,36px);height:clamp(27px,2.1vw,36px);border-radius:50%;
+      background:var(--c);color:#fff;display:grid;place-items:center;
+      font-size:clamp(13px,.85vw,16px);font-weight:800}
+.mod.done .mnum{background:var(--good);font-size:0}
+.mod.done .mnum::after{content:"✓";font-size:clamp(14px,.95vw,18px)}
+.mtitle{flex:1;min-width:0}
+.mtitle b{display:block;font-size:var(--fs-lg);line-height:1.3}
+.mtitle span{display:block;font-size:var(--fs-sm);color:var(--muted);margin-top:3px}
+.chev{flex:none;color:var(--muted);transition:transform .2s}
+.mod.book .mhead .chev,.mod.leaf-mod .mhead .chev{transform:none;font-size:var(--fs-sm);font-weight:800;color:var(--ac)}
+.stackhd{font-size:var(--fs-lg);font-weight:800;color:var(--head);margin:30px 0 8px;padding-top:18px;border-top:2px solid var(--rule)}
+.stackhd:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.stacksub{margin:0 0 16px;color:var(--muted);font-size:var(--fs);max-width:66ch}
+.btn{font:inherit;font-weight:700;font-size:var(--fs);cursor:pointer;border:0;border-radius:7px;min-height:var(--tap);
+     background:var(--head);color:#fff;padding:clamp(11px,.9vw,15px) clamp(20px,1.6vw,28px)}
+.btn.ghost{background:none;color:var(--head);border:1.5px solid var(--head)}
+.note{font-size:var(--fs-sm);color:var(--muted);border-left:3px solid var(--ac-soft);padding-left:12px;margin:14px 0 0}
+footer{padding:34px 0 60px;font-size:13px;color:var(--muted);line-height:1.7}
+
+/* grammar table (gap modules may pin one in the text pane) */
+.gtab{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:var(--fs)}
+.gtab caption{text-align:left;font-size:clamp(11.5px,.58vw,13.5px);font-weight:800;letter-spacing:.12em;
+              text-transform:uppercase;color:var(--teal);padding:0 0 9px}
+.gtab th,.gtab td{border:1px solid var(--rule);padding:clamp(8px,.7vw,13px) clamp(9px,.8vw,15px);text-align:left}
+.gtab th{background:var(--teal-bg);color:var(--teal);font-weight:800;font-size:var(--fs-sm)}
+.gtab td b{color:var(--teal)}
+.gtab.mini th,.gtab.mini td{padding:6px 8px}
+.gwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ================= THE BOOK ================= */
+.bookwrap{position:fixed;inset:0;z-index:80;display:none;place-items:center;
+          padding:clamp(10px,2.4vw,30px);background:rgba(18,38,34,.62);
+          backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.bookwrap.on{display:grid;animation:fadein .2s ease}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.open-book{position:relative;width:100%;max-width:clamp(900px,94vw,1560px);height:min(93vh,980px);
+     display:flex;flex-direction:column;background:var(--page);border-radius:4px 12px 12px 4px;
+     box-shadow:0 30px 70px rgba(10,28,24,.50);animation:lift .26s cubic-bezier(.3,.1,.2,1);overflow:hidden}
+@keyframes lift{from{transform:translateY(16px) scale(.985);opacity:0}to{transform:none;opacity:1}}
+.open-book::before{content:"";position:absolute;left:0;top:0;bottom:0;width:13px;z-index:3;pointer-events:none;
+     border-radius:4px 0 0 4px;background:linear-gradient(90deg,#143F37,#237A69 46%,#174C42)}
+.open-book.spread::before{width:7px;top:8px;bottom:8px;
+     background:repeating-linear-gradient(90deg,#DEE3E9 0 1px,#FFFFFF 1px 2px)}
+.open-book::after{content:"";position:absolute;right:0;top:8px;bottom:8px;width:7px;z-index:3;pointer-events:none;
+     border-radius:0 4px 4px 0;background:repeating-linear-gradient(90deg,#FFFFFF 0 1px,#DEE3E9 1px 2px)}
+.bookbar{flex:none;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+         padding:clamp(12px,.9vw,18px) clamp(22px,1.8vw,34px) clamp(12px,.9vw,18px) clamp(30px,2.2vw,42px);
+         border-bottom:1px solid var(--rule);background:linear-gradient(#FFF,#FAFBFC)}
+.bookbar .bt{flex:1;min-width:0;font-size:clamp(12.5px,.62vw,15px);font-weight:800;letter-spacing:.12em;
+             text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bookbar .ptag{flex:none;font-size:clamp(11px,.58vw,13.5px);font-weight:800;letter-spacing:.12em;
+               text-transform:uppercase;color:#fff;background:var(--ac);padding:6px 14px;border-radius:20px}
+.bookbar button{font:inherit;background:none;border:0;cursor:pointer;color:var(--head);min-height:var(--tap);
+                font-size:var(--fs-sm);font-weight:700;padding:7px 12px;border-radius:6px}
+.bookbar button:hover{background:var(--quote)}
+/* The player is pinned OUTSIDE the paginated flow: controls inside CSS multicol + a
+   transform are unreliable, and pinning keeps the voice going while pages turn. */
+.pbar{flex:none;display:flex;gap:10px 14px;align-items:center;flex-wrap:wrap;
+      padding:clamp(10px,.8vw,16px) clamp(22px,1.8vw,34px) clamp(10px,.8vw,16px) clamp(30px,2.2vw,42px);
+      border-bottom:1px solid var(--ac-soft);background:var(--warn-bg)}
+.pbtn{font:inherit;font-weight:800;font-size:var(--fs);cursor:pointer;border:0;border-radius:24px;
+      min-height:var(--tap);min-width:var(--tap);background:var(--ac);color:#fff;padding:9px 22px;display:inline-flex;gap:8px;align-items:center}
+.pbtn.ghost{background:#fff;color:var(--ac);border:2px solid var(--ac)}
+.pbtn[disabled]{opacity:.4;cursor:default}
+.speed{display:inline-flex;border:2px solid var(--ac);border-radius:24px;overflow:hidden;background:#fff}
+.speed button{font:inherit;font-size:var(--fs-sm);font-weight:800;cursor:pointer;border:0;background:none;
+              color:var(--ac);min-height:var(--tap);padding:0 16px}
+.speed button[aria-pressed="true"]{background:var(--ac);color:#fff}
+.speed button+button{border-left:2px solid var(--ac)}
+.playing-now{flex:1 1 200px;min-width:0;font-size:var(--fs-sm);color:var(--muted);font-weight:700}
+.playing-now b{color:var(--ac)}
+.viewport{flex:1;position:relative;overflow:hidden;overflow:clip;touch-action:pan-y;cursor:grab;background:var(--page)}
+.viewport.dragging{cursor:grabbing;user-select:none;-webkit-user-select:none}
+.viewport.dragging *{cursor:grabbing}
+.gutter{position:absolute;top:0;bottom:0;left:var(--gut,50%);width:2px;
+        background:linear-gradient(90deg,rgba(28,50,45,.16),rgba(28,50,45,.22),rgba(28,50,45,.16));
+        z-index:2;pointer-events:none;display:none}
+.viewport.spread .gutter{display:block}
+.gutter::before,.gutter::after{content:"";position:absolute;top:0;bottom:0;width:34px}
+.gutter::before{right:2px;background:linear-gradient(90deg,rgba(28,50,45,0),rgba(28,50,45,.11))}
+.gutter::after{left:2px;background:linear-gradient(90deg,rgba(28,50,45,.11),rgba(28,50,45,0))}
+.flow{position:absolute;top:0;bottom:0;left:0;font-family:var(--read);
+      font-size:clamp(19px,.55vw + 16.5px,26px);line-height:1.75;color:#1a2733;
+      padding:clamp(22px,2.6vw,52px) clamp(24px,2.6vw,54px);
+      column-fill:auto;transition:transform .3s cubic-bezier(.4,.1,.2,1)}
+.flow p,.flow h1,.flow h2,.lo-num,.endnote{break-inside:avoid}
+.bpage+.bpage{break-before:column}
+.bookfoot{flex:none;display:flex;align-items:center;gap:12px;
+          padding:clamp(9px,.7vw,15px) clamp(22px,1.8vw,34px) clamp(9px,.7vw,15px) clamp(30px,2.2vw,42px);
+          border-top:1px solid var(--rule);background:linear-gradient(#FAFBFC,#FFF);
+          font-size:var(--fs-sm);color:var(--muted)}
+.bookfoot button{font:inherit;background:#fff;border:1px solid var(--rule);border-radius:7px;min-height:var(--tap);min-width:var(--tap);
+                 cursor:pointer;color:var(--head);padding:clamp(7px,.6vw,11px) clamp(15px,1.3vw,22px);font-weight:700}
+.bookfoot button[disabled]{opacity:.3;cursor:default}
+.dots{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;flex:1}
+.dots i{width:clamp(6px,.45vw,9px);height:clamp(6px,.45vw,9px);border-radius:50%;background:var(--rule)}
+.dots i.on{background:var(--ac)}
+
+/* book typography */
+.lo-num{display:inline-block;font-family:var(--ui);font-size:clamp(11.5px,.6vw,14px);font-weight:800;
+        letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--ac);
+        padding:6px 15px;border-radius:20px;margin:0 0 14px}
+.flow h1{font-family:var(--ui);font-size:clamp(23px,2.1vw,40px);font-weight:800;letter-spacing:-.018em;
+         line-height:1.15;color:var(--head);margin:0 0 8px}
+.flow .why{font-family:var(--ui);font-size:clamp(14.5px,.42vw + 12.9px,18px);color:var(--muted);
+           margin:0 0 22px;line-height:1.5}
+.flow h2.ph{font-family:var(--ui);font-size:clamp(12px,.62vw,15px);font-weight:800;letter-spacing:.14em;
+            text-transform:uppercase;color:var(--ac);margin:0 0 12px}
+.bpage{margin:0 0 26px}
+.story{margin:0}
+/* sentences and words — the highlight units */
+.s{cursor:pointer;border-radius:6px;padding:2px 0;transition:background .15s;-webkit-tap-highlight-color:transparent}
+.s:hover{background:var(--quote)}
+.s:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.s.cur-s{background:var(--hl-s);box-shadow:0 0 0 4px var(--hl-s)}
+.w{border-radius:4px;padding:0 1px;transition:background .08s}
+.w.cur-w{background:var(--hl-w);color:#1a1a1a;box-shadow:0 0 0 3px var(--hl-w)}
+.w.gl{cursor:pointer}
+.w.gl .glu{text-decoration:underline dotted var(--ac) 2px;text-underline-offset:4px}
+.w.gl:hover{background:var(--ac-soft)}
+.endnote{border:1px solid var(--rule);background:var(--box);border-radius:8px;padding:15px 17px;margin:22px 0 0;font-family:var(--ui)}
+.endnote b{font-size:clamp(11.5px,.6vw,14px);font-weight:800;letter-spacing:.12em;
+           text-transform:uppercase;color:var(--muted);display:block;margin-bottom:7px}
+.endnote p{font-size:clamp(14.5px,.4vw + 13px,18px);margin:0 0 12px;color:var(--muted);line-height:1.5}
+.endnote .btn{font-size:var(--fs-sm)}
+.passnote{display:none;flex:0 0 100%;gap:10px;align-items:center;flex-wrap:wrap;font-size:var(--fs-sm);color:var(--head);font-weight:700}
+.passnote.on{display:flex}
+.passnote .btn{font-size:var(--fs-sm);background:var(--ac);padding:8px 16px;min-height:40px}
+
+/* the glossary sheet — global so it serves the book and the leaf */
+.sheet{position:fixed;inset:0;z-index:95;display:flex;align-items:flex-end;
+       background:rgba(18,38,34,.30);animation:fadein .18s ease}
+.sheet[hidden]{display:none}
+.sheetin{width:100%;max-width:720px;margin:0 auto;max-height:84%;overflow-y:auto;background:var(--warn-bg);
+         border-top:3px solid var(--warn);border-radius:14px 14px 0 0;
+         padding:16px clamp(22px,3.4vw,40px) 24px;box-shadow:0 -10px 30px rgba(18,38,34,.16);
+         animation:rise .24s cubic-bezier(.4,.1,.2,1)}
+@keyframes rise{from{transform:translateY(22px)}to{transform:none}}
+.sheethd{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 10px}
+.sheethd b{font-size:clamp(11.5px,.6vw,14px);font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--warn)}
+.sheethd button{font:inherit;font-size:var(--fs-sm);font-weight:700;cursor:pointer;background:#fff;min-height:var(--tap);
+                border:1.5px solid var(--warn);color:var(--warn);border-radius:7px;padding:7px 15px}
+.gword{font-size:clamp(26px,2.4vw,38px);font-weight:800;color:var(--head);margin:0 0 2px;line-height:1.2}
+.gsay{font-size:var(--fs);color:var(--ac);font-weight:700;margin:0 0 10px;letter-spacing:.04em}
+.gmeans{font-size:var(--fs-lg);margin:0 0 14px;line-height:1.5}
+
+/* ================= THE LEAF ================= */
+.leafwrap{position:fixed;inset:0;z-index:70;display:none;place-items:center;
+          padding:clamp(8px,2vw,26px);background:rgba(18,38,34,.62);
+          backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.leafwrap.on{display:grid;animation:fadein .2s ease}
+.leaf{position:relative;width:100%;max-width:clamp(900px,95vw,1640px);height:min(94vh,1000px);
+      display:flex;flex-direction:column;background:var(--page);border-radius:4px 12px 12px 4px;
+      box-shadow:0 30px 70px rgba(10,28,24,.50);animation:lift .26s cubic-bezier(.3,.1,.2,1);overflow:hidden}
+.leaf::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;z-index:3;pointer-events:none;
+      background:repeating-linear-gradient(90deg,#DEE3E9 0 1px,#FFFFFF 1px 2px)}
+.leafbar{flex:none;display:flex;align-items:center;gap:clamp(10px,1.2vw,18px);flex-wrap:wrap;
+         padding:clamp(11px,.9vw,17px) clamp(20px,1.8vw,32px) clamp(11px,.9vw,17px) clamp(26px,2vw,40px);
+         border-bottom:1px solid var(--rule);background:linear-gradient(#FFF,#FAFBFC)}
+.ltag{flex:none;font-size:clamp(11px,.58vw,13.5px);font-weight:800;letter-spacing:.12em;
+      text-transform:uppercase;color:#fff;background:var(--c);padding:6px 14px;border-radius:20px}
+.leafbar .lt{flex:1;min-width:120px;font-size:var(--fs-lg);font-weight:800;color:var(--head)}
+.leafbar button{font:inherit;font-size:var(--fs-sm);font-weight:700;cursor:pointer;background:#fff;min-height:var(--tap);
+                border:1.5px solid var(--rule);color:var(--head);border-radius:7px;padding:8px 14px}
+.leafbar button:hover{border-color:var(--c);color:var(--c)}
+.ltabs{display:none;flex:none;border-bottom:1px solid var(--rule);background:var(--box)}
+.ltabs button{flex:1;font:inherit;font-size:var(--fs-sm);font-weight:800;cursor:pointer;background:none;min-height:var(--tap);
+              border:0;border-bottom:3px solid transparent;padding:11px 8px;color:var(--muted)}
+.ltabs button.on{color:var(--c);border-bottom-color:var(--c)}
+.leafbody{flex:1;display:flex;min-height:0}
+.lpane{overflow-y:auto;-webkit-overflow-scrolling:touch;min-height:0}
+.ltext{flex:0 0 42%;border-right:1px solid var(--rule);background:#FCFCFA;
+       padding:clamp(20px,1.9vw,38px) clamp(22px,1.9vw,40px);
+       font-family:var(--read);font-size:clamp(17px,.4vw + 15.5px,21px);line-height:1.7;color:#1a2733}
+.ltext h4{font-family:var(--ui);font-size:clamp(11.5px,.58vw,13.5px);font-weight:800;letter-spacing:.12em;
+          text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.ltext .lhint{font-family:var(--ui);font-size:var(--fs-sm);color:var(--muted);margin:0 0 18px;line-height:1.5}
+.ltext .bpage{margin:0 0 20px}
+.ltext h2.ph{font-family:var(--ui);font-size:clamp(11.5px,.58vw,13.5px);font-weight:800;letter-spacing:.12em;
+             text-transform:uppercase;color:var(--c);margin:0 0 6px}
+.lex{flex:1;padding:clamp(20px,1.9vw,38px) clamp(22px,1.9vw,40px)}
+.lex .llead{font-size:var(--fs);color:var(--muted);margin:0 0 20px;max-width:62ch;line-height:1.55}
+.xi{border:1px solid var(--rule);border-left:4px solid var(--c);border-radius:9px;
+    background:#fff;padding:clamp(14px,1.1vw,20px);margin:0 0 12px}
+.xi.right{border-color:var(--good);border-left-color:var(--good);background:var(--good-bg)}
+.xi.wrong{border-color:#C94F3D;border-left-color:#C94F3D;background:#FBE9E7}
+.xi.done{border-color:var(--good);border-left-color:var(--good);background:var(--good-bg)}
+.xn{display:inline-block;font-size:clamp(10.5px,.55vw,12.5px);font-weight:800;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--c);margin:0 0 7px}
+.xq{font-size:var(--fs-lg);font-weight:700;color:var(--head);margin:0 0 11px;line-height:1.45}
+.xword{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:clamp(24px,2vw,34px);font-weight:800;color:var(--head);margin:0 0 8px}
+.xgap{font-family:var(--read);font-size:clamp(18px,.5vw + 16px,23px);line-height:1.8;margin:0 0 12px;color:var(--head)}
+.blank{display:inline-block;min-width:5ch;border-bottom:3px solid var(--c);text-align:center;color:var(--c);font-weight:800;padding:0 6px}
+.xline{font-family:var(--read);font-size:clamp(20px,.6vw + 17px,27px);color:var(--head);margin:0 0 8px;line-height:1.5}
+.xtip{font-size:var(--fs-sm);color:var(--muted);margin:0 0 12px}
+.xrow{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.xrow .btn{font-size:var(--fs-sm)}
+.xrow .btn.rec{background:var(--coral)}
+.xrow .btn.rec.live{background:#8E2A1C;animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.6}}
+.xrow audio{height:40px;max-width:100%}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font-family:var(--ui);font-size:var(--fs);cursor:pointer;background:#fff;border:1.5px solid var(--rule);min-height:var(--tap);
+     border-radius:7px;padding:clamp(9px,.75vw,13px) clamp(14px,1.1vw,20px);color:var(--ink);text-align:left}
+.opt[aria-pressed="true"]{border-color:var(--head);background:var(--quote);font-weight:700}
+.opt.right{background:var(--good-bg);border-color:var(--good);color:var(--good);font-weight:700}
+.opt.wrong{background:#FBE9E7;border-color:#C94F3D;color:#C94F3D}
+.opt.hear{border-color:var(--c);color:var(--c);font-weight:800}
+.xwhy{display:none;font-size:var(--fs);color:var(--ink);line-height:1.55;
+      margin:11px 0 0;padding:11px 13px;border-radius:7px;background:var(--warn-bg);border:1px solid var(--warn)}
+.xwhy b{display:block;font-size:clamp(10.5px,.55vw,12.5px);letter-spacing:.1em;text-transform:uppercase;color:var(--warn);margin-bottom:4px}
+.xi.shown .xwhy{display:block}
+.xok{display:none;margin:11px 0 0;font-size:var(--fs);font-weight:800;color:var(--good)}
+.xi.right .xok{display:block}
+.xta{font:inherit;font-size:var(--fs-lg);border:1.5px solid var(--rule);border-radius:8px;
+     padding:11px 13px;width:100%;min-height:96px;resize:vertical;line-height:1.5}
+.xmodel{display:none;margin:11px 0 0;padding:11px 13px;border-radius:7px;
+        background:var(--good-bg);border:1px solid var(--good);font-size:var(--fs)}
+.xmodel b{display:block;font-size:clamp(10.5px,.55vw,12.5px);letter-spacing:.1em;text-transform:uppercase;
+          color:var(--good);margin-bottom:4px}
+.xi.model .xmodel{display:block}
+/* order cards */
+.pool,.seq{display:flex;flex-direction:column;gap:8px;margin:0 0 10px}
+.seq{min-height:20px}
+.pool .opt{width:100%}
+.seq .opt{width:100%;display:flex;gap:10px;align-items:center;border-color:var(--c);background:#fff;cursor:default}
+.seq .opt i{flex:none;width:28px;height:28px;border-radius:50%;background:var(--c);color:#fff;font-style:normal;font-weight:800;display:grid;place-items:center;font-size:13px}
+.seq .opt.ok{border-color:var(--good);background:var(--good-bg)}
+.seq .opt.bad{border-color:#C94F3D;background:#FBE9E7}
+.ordlbl{font-size:clamp(10.5px,.55vw,12.5px);font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:10px 0 6px}
+.leaffoot{flex:none;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+          padding:clamp(9px,.75vw,15px) clamp(20px,1.8vw,32px) clamp(9px,.75vw,15px) clamp(26px,2vw,40px);
+          border-top:1px solid var(--rule);background:linear-gradient(#FAFBFC,#FFF)}
+.lprog{flex:1;min-width:120px;font-size:var(--fs-sm);font-weight:700;color:var(--muted)}
+.lbar{flex:0 0 100%;height:5px;border-radius:3px;background:var(--rule);overflow:hidden;margin:0 0 4px}
+.lbar i{display:block;height:100%;width:0;background:var(--c);transition:width .3s}
+.verdict{font-family:var(--ui);margin:0;padding:11px 14px;border-radius:7px;font-size:var(--fs);display:none;flex:0 0 100%}
+.verdict.pass{display:block;background:var(--good-bg);border:1px solid var(--good);color:var(--good)}
+.verdict.help{display:block;background:var(--warn-bg);border:1px solid var(--warn);color:var(--ink)}
+.leaffoot .btn{background:var(--c)}
+.leaffoot .btn.ghost{background:none;color:var(--head);border:1.5px solid var(--rule)}
+.leaffoot .btn[disabled]{opacity:.4;cursor:default}
+@media (max-width:900px){
+  .ltabs{display:flex}
+  .ltext{flex:1 1 auto;border-right:0;display:none}
+  .lex{display:none}
+  .leaf.show-text .ltext{display:block}
+  .leaf.show-ex .lex{display:block}
+}
+@media (prefers-reduced-motion:reduce){
+  .flow,.bookobj .slab,.s,.w,.lbar i,.chev{transition:none}
+  .bookwrap.on,.leafwrap.on,.open-book,.leaf,.sheet,.sheetin{animation:none}
+  .xrow .btn.rec.live{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="chead">
+  <div class="wrap">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1 id="h1"></h1>
+    <p class="sub" id="sub"></p>
+    <div class="rail" id="rail" aria-hidden="true"></div>
+    <p class="railtext" id="railtext"></p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="review" id="reviewbar" hidden>
+    <div class="rvtext"><b id="rvtitle"></b><span id="rvsub"></span></div>
+    <div class="rvbtns">
+      <button type="button" id="rvreset"></button>
+    </div>
+  </div>
+
+  <div class="desk">
+    <div class="deskcopy">
+      <h2 id="deskTitle"></h2>
+      <p id="deskIntro"></p>
+      <ul class="rungs" id="rungs"></ul>
+    </div>
+    <button class="bookobj" id="bookobj" type="button">
+      <span class="slab">
+        <span class="bk" id="slabTop"></span>
+        <span class="bt" id="slabTitle"></span>
+        <span class="bm" id="slabBottom"></span>
+      </span>
+      <span class="open" id="slabOpen"></span>
+    </button>
+    <div class="earsband"><span aria-hidden="true">📖</span>
+      <p id="bandText"></p>
+    </div>
+  </div>
+
+  <div class="howto">
+    <h2 id="howtoTitle"></h2>
+    <div id="howtoBody"></div>
+  </div>
+
+  <div id="stack"></div>
+
+</div>
+
+<footer class="wrap" id="foot"></footer>
+
+<div class="vh" aria-live="polite" id="live"></div>
+
+<!-- ================= the book ================= -->
+<div class="bookwrap" id="bookwrap" role="dialog" aria-modal="true" aria-label="The book">
+  <div class="open-book" id="openbook">
+    <div class="bookbar">
+      <span class="ptag" id="btag"></span>
+      <span class="bt" id="btitle"></span>
+      <button type="button" id="bclose"></button>
+    </div>
+    <div class="pbar" id="pbar">
+      <button type="button" class="pbtn" id="pplay" aria-pressed="false"></button>
+      <button type="button" class="pbtn ghost" id="prestart"></button>
+      <div class="speed" id="speed" role="group"></div>
+      <span class="playing-now" id="pnow"></span>
+      <div class="passnote" id="passnote"></div>
+    </div>
+    <div class="viewport" id="viewport">
+      <div class="flow" id="flow"></div>
+      <div class="gutter"></div>
+    </div>
+    <div class="bookfoot">
+      <button type="button" id="prev" aria-label="Previous page">‹</button>
+      <div class="dots" id="dots"></div>
+      <button type="button" id="next" aria-label="Next page">›</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= the leaf ================= -->
+<div class="leafwrap" id="leafwrap" role="dialog" aria-modal="true" aria-label="Module">
+  <div class="leaf" id="leaf">
+    <div class="leafbar">
+      <span class="ltag" id="ltag"></span>
+      <span class="lt" id="ltitle"></span>
+      <button type="button" id="lbook"></button>
+      <button type="button" id="lclose"></button>
+    </div>
+    <div class="ltabs">
+      <button type="button" id="tabText"></button>
+      <button type="button" id="tabEx" class="on"></button>
+    </div>
+    <div class="leafbody">
+      <div class="lpane ltext" id="ltext"></div>
+      <div class="lpane lex" id="lex"></div>
+    </div>
+    <div class="leaffoot">
+      <div class="lbar"><i id="lbarfill"></i></div>
+      <span class="lprog" id="lprog"></span>
+      <div class="verdict" id="lverdict"></div>
+      <button type="button" class="btn ghost" id="lcheck"></button>
+      <button type="button" class="btn" id="ldone" disabled></button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= the glossary sheet ================= -->
+<div class="sheet" id="gsheet" hidden role="dialog" aria-modal="true" aria-label="Word help">
+  <div class="sheetin">
+    <div class="sheethd"><b id="gsheetHd"></b><button type="button" id="gclose"></button></div>
+    <p class="gword" id="gword"></p>
+    <p class="gsay" id="gsay"></p>
+    <p class="gmeans" id="gmeans"></p>
+    <button type="button" class="pbtn" id="ghear"></button>
+  </div>
+</div>
+
+<script type="application/json" id="manifest">{"_notice":"© 2026 Dr Vitor Merissi de Carvalho · Edu.Ai SV Digital — Edu.Ai Ecosystem framework. All rights reserved.","_note":"Original first-person travel piece written for this kit (reading age 8–9). Not adapted from any published travel book; the journey, the family and the town details are invented for the reader.","_readability":{"sentences":77,"words":588,"mean_sentence_length":7.64,"longest_sentence_words":12,"sentences_over_12_words":0,"pct_words_3plus_syllables":1.9,"mean_syllables_per_word":1.19,"flesch_kincaid_grade":1.44,"target":"FK grade ≤ 3.5; mostly ≤ 12 words per sentence","method":"content/y7/odyssey/_readability.py — whitespace tokens, vowel-group syllable count, FK = 0.39·ASL + 11.8·ASW − 15.59"},"_source":"Unit weeks and focus from the generated 2026-27 draft scheme (/home/claude/secondment/link1/docs/Y7_English.txt, Half Term 5). The chapter text is the writer's own.","schema":"chapter/1","meta":{"school":"Harlington School","course":"Year 7 English","unit":"Non-fiction and Travel Writing","slug":"travel-writing","half_term":"HT5","year":7,"id":"y7-english-travel-writing","siteUrl":"https://vmcssse-ui.github.io/harlington-english/","noindex":true,"title":"Across the Water","sub":"A boy and his gran leave London by train and ferry, cross a border, and find a second home.","eyebrow":"Year 7 English · Travel Writing · Read-along"},"reading":{"age":"8–9","wpm":110,"glossary":[{"word":"journey","say":"JER-nee","means":"a trip from one place to another"},{"word":"passport","say":"PASS-port","means":"a small book that shows who you are when you go to another country"},{"word":"border","say":"BOR-der","means":"the line where one country ends and another begins"},{"word":"platform","say":"PLAT-form","means":"the place at a station where you get on the train"},{"word":"harbour","say":"HAR-ber","means":"a safe place by the shore where ships stop"},{"word":"gull","say":"GUL","means":"a big grey and white sea bird with a loud cry"},{"word":"ferry","say":"FERR-ee","means":"a big boat that carries people and cars across the water"},{"word":"deck","say":"DEK","means":"the open floor on top of a ship"},{"word":"canal","say":"ka-NAL","means":"a river made by people, with straight sides"},{"word":"tram","say":"TRAM","means":"a bus that runs on rails in the street"},{"word":"market","say":"MAR-kit","means":"a place with lots of small shops or stalls, often outside"},{"word":"stall","say":"STAWL","means":"a small open shop with a table, at a market"},{"word":"waffle","say":"WOF-ul","means":"a flat sweet cake with a pattern of squares"},{"word":"foreign","say":"FORR-en","means":"from another country"},{"word":"souvenir","say":"soo-ven-EER","means":"a small thing you keep to remember a place"},{"word":"homesick","say":"HOME-sik","means":"sad because you miss your home"}],"pages":[{"heading":"1 · The early train","sentences":["My name is Sam, and I am eleven.","This is the story of my first journey abroad.","Gran and I left London before the sun came up.","The station was cold and full of echoes.","Our train waited at platform nine.","Gran held both tickets and both passports.","“Your passport is your key to the border,” she said."]},{"heading":"2 · Out of the city","sentences":["The train hummed, and the city slid away.","I saw grey roofs, then green fields, then sheep.","Gran gave me a warm roll from her bag.","It smelled of butter.","Outside, the sky turned pink and then gold.","I pressed my nose to the cold glass.","“We are going to see your Auntie Ria,” said Gran.","She lives across the sea, in Holland."]},{"heading":"3 · The harbour","sentences":["At the end of the line we smelled salt.","The harbour was wide and grey and busy.","A gull screamed above us like a rusty gate.","A huge white ferry waited by the wall.","It was as tall as a block of flats.","A man checked our passports with a stamp.","Thump!","Now we could sail."]},{"heading":"4 · On the sea","sentences":["The ferry shook, and the land slid away behind us.","Up on the deck the wind pulled at my hair.","It tasted of salt.","The sea was green, then grey, then dark blue.","Gran wrapped her scarf round both of us.","Far out, we crossed the border.","You cannot see a border on the sea.","But we were in a new country now."]},{"heading":"5 · A new land","sentences":["The ferry stopped at a port called Hook of Holland.","Everything looked the same, and everything looked different.","The signs had long words with double letters.","A man said, “Goedemorgen!”","Gran said it means good morning.","I tried the foreign word, and it felt funny in my mouth.","Then we got on a yellow train."]},{"heading":"6 · Auntie Ria's town","sentences":["Auntie Ria met us at the station.","She hugged Gran for a long, long time.","Her town had canals instead of roads.","The water was still and brown like tea.","Bikes rang their bells and rushed past us.","A blue tram hissed by.","Her house was thin and tall, like a slice of cake."]},{"heading":"7 · New food","sentences":["That night we ate at a long wooden table.","Auntie Ria gave me a bowl of thick pea soup.","It was green and hot and full of smoky bits.","“Lekker?” she asked.","That means tasty.","I said, “Lekker!” and everyone laughed.","After that, I said lekker about everything."]},{"heading":"8 · The market","sentences":["On Saturday we went to the market.","Every stall shouted with colour.","There were tulips in red, yellow and orange.","Round cheeses sat in rows like yellow moons.","A man fried a hot waffle with syrup inside.","The smell was sweet and warm.","I bought one with my own coins.","It stuck to my fingers all the way home."]},{"heading":"9 · Two homes","sentences":["On the last night I sat by the canal.","The lights shook on the dark water.","I felt happy and a little bit homesick.","Auntie Ria sat next to me.","“In Dutch we say thuis,” she said.","“It means at home.”","I thought about our flat in London.","Then I thought about this thin house.","Maybe you can have two homes."]},{"heading":"10 · Coming home","sentences":["We crossed the border again on the ferry.","This time the sea was calm and silver.","In my pocket was a souvenir: a tiny clay clog.","At the harbour a man stamped my passport again.","The train took us back to London.","The station was still cold and full of echoes.","But I was not the same boy who left.","I had crossed a border, and I had seen the world."]}]},"audio":{"story":"","timings":"","voice":{"lang":"en-GB","rate":0.9}},"passes":[{"key":"listen","title":"Listen and watch the words","how":"Press play. The words light up as they are read."},{"key":"along","title":"Read along","how":"Press play and read aloud with the voice."},{"key":"alone","title":"Read it yourself","how":"Read the story on your own. Tap any sentence to hear it."}],"modules":[{"key":"words","kind":"words","title":"Words — hear and match","colour":"amber","lead":"Tap the speaker to hear the word. Then pick what it means.","items":[{"word":"border","means":"the line where one country ends and another begins","options":["the line where one country ends and another begins","a big boat","a kind of bread"],"answer":0},{"word":"passport","means":"a small book that shows who you are","options":["a train ticket","a small book that shows who you are","a warm scarf"],"answer":1},{"word":"harbour","means":"a safe place by the shore where ships stop","options":["a tall thin house","a place to buy cheese","a safe place by the shore where ships stop"],"answer":2},{"word":"ferry","means":"a big boat that carries people across the water","options":["a big boat that carries people across the water","a bus on rails","a sea bird"],"answer":0},{"word":"canal","means":"a river made by people, with straight sides","options":["a sweet cake","a river made by people, with straight sides","a station platform"],"answer":1},{"word":"market","means":"a place with lots of stalls, often outside","options":["a ship's deck","a foreign word","a place with lots of stalls, often outside"],"answer":2},{"word":"souvenir","means":"a small thing you keep to remember a place","options":["a small thing you keep to remember a place","a bowl of soup","a kind of tram"],"answer":0},{"word":"homesick","means":"sad because you miss your home","options":["ill from the sea","sad because you miss your home","lost in a new town"],"answer":1}]},{"key":"order","kind":"order","title":"Listening — put the journey in order","colour":"violet","lead":"Tap the events in the order they happen in the story.","items":[{"text":"Sam and Gran leave London on an early train."},{"text":"A man stamps their passports at the harbour."},{"text":"They cross the border on the ferry."},{"text":"A man says Goedemorgen at the port."},{"text":"Auntie Ria meets them at the station."},{"text":"Sam eats pea soup and says lekker."},{"text":"Sam buys a hot waffle at the market."},{"text":"Sam comes home to London with a clay clog."}]},{"key":"find","kind":"find","title":"Reading — find the line","colour":"navy","lead":"The answer is in the story on the left. Tap a sentence to hear it.","items":[{"q":"Which platform did the train leave from?","options":["platform nine","platform two","platform twelve"],"answer":0,"why":"Page 1 says: Our train waited at platform nine."},{"q":"What did Gran give Sam on the train?","options":["a sweet","a warm roll","a cup of tea"],"answer":1,"why":"Page 2 says: Gran gave me a warm roll from her bag."},{"q":"What was the ferry as tall as?","options":["a tree","a church","a block of flats"],"answer":2,"why":"Page 3 says: It was as tall as a block of flats."},{"q":"What did the wind taste of on the deck?","options":["salt","smoke","sugar"],"answer":0,"why":"Page 4 says: It tasted of salt."},{"q":"What does Goedemorgen mean?","options":["thank you","good morning","goodbye"],"answer":1,"why":"Page 5 says: Gran said it means good morning."},{"q":"What did Auntie Ria's town have instead of roads?","options":["fields","trams","canals"],"answer":2,"why":"Page 6 says: Her town had canals instead of roads."},{"q":"What did the round cheeses look like?","options":["yellow moons","big wheels","gold coins"],"answer":0,"why":"Page 8 says: Round cheeses sat in rows like yellow moons."},{"q":"What souvenir did Sam bring home?","options":["a tulip","a tiny clay clog","a cheese"],"answer":1,"why":"Page 10 says: In my pocket was a souvenir: a tiny clay clog."}]},{"key":"grammar","kind":"gap","title":"Grammar — words for the senses","colour":"teal","lead":"Travel writers use words for the five senses: see, hear, smell, taste, touch. Pick the sense word that fits.","table":{"caption":"sense words — they let the reader see, hear, smell, taste and feel the place","rows":[["sense","the word","from the story"],["see","grey · pink · gold","the sky turned pink and then gold"],["hear","hummed · screamed · hissed","a blue tram hissed by"],["smell","salt · butter · sweet","it smelled of butter"],["taste","smoky · tasty","full of smoky bits"],["touch","cold · warm · sticky","the cold glass"]]},"items":[{"before":"The station was","after":"and full of echoes.","options":["cold","ran","Gran"],"answer":0},{"before":"Gran gave me a","after":"roll from her bag.","options":["sat","warm","quickly"],"answer":1},{"before":"The harbour was wide and","after":"and busy.","options":["went","they","grey"],"answer":2},{"before":"A gull","after":"above us like a rusty gate.","options":["screamed","blue","soon"],"answer":0},{"before":"The water was still and","after":"like tea.","options":["jumped","brown","under"],"answer":1},{"before":"It was green and hot and full of","after":"bits.","options":["walked","always","smoky"],"answer":2},{"before":"The smell was","after":"and warm.","options":["sweet","bought","very"],"answer":0},{"before":"This time the sea was calm and","after":"","options":["sailed","silver.","then."],"answer":1}]},{"key":"speaking","kind":"say","title":"Speaking — say it like the traveller","colour":"coral","lead":"Hear the line, then say it. Record yourself if you like — nobody marks it.","items":[{"line":"Your passport is your key to the border.","tip":"Say it like a gran who has said it many times."},{"line":"The train hummed, and the city slid away.","tip":"Say it softly, like the start of a journey."},{"line":"Thump! Now we could sail.","tip":"Make the thump loud, then sound excited."},{"line":"You cannot see a border on the sea.","tip":"Say it slowly, like you are thinking hard."},{"line":"Goedemorgen!","tip":"Try the foreign word. It does not need to be perfect."},{"line":"Lekker!","tip":"Say it with your mouth full of soup."},{"line":"Every stall shouted with colour.","tip":"Say it brightly, like a busy market."},{"line":"Maybe you can have two homes.","tip":"Say it quietly, like a new idea."}]},{"key":"writing","kind":"frame","title":"Writing — finish the sentence","colour":"navy","lead":"Finish each sentence with a sense word if you can. Any answer in your own words counts.","items":[{"frame":"The station in London was","model":"The station in London was cold and full of echoes."},{"frame":"On the deck of the ferry, the wind","model":"On the deck of the ferry, the wind pulled at my hair and tasted of salt."},{"frame":"You cannot see a border on the sea because","model":"You cannot see a border on the sea because it is just a line on a map."},{"frame":"The Dutch word Goedemorgen felt","model":"The Dutch word Goedemorgen felt funny in my mouth."},{"frame":"Auntie Ria's house was thin and tall, like","model":"Auntie Ria's house was thin and tall, like a slice of cake."},{"frame":"The pea soup was","model":"The pea soup was green and hot and full of smoky bits."},{"frame":"At the market I could smell","model":"At the market I could smell sweet, warm waffles."},{"frame":"Sam was not the same boy who left because","model":"Sam was not the same boy who left because he had crossed a border and seen the world."}]},{"key":"retell","kind":"retell","title":"Retell the journey in eight pictures","colour":"amber","lead":"Tell the journey in your own words, one picture at a time. Use I and we, like a travel writer.","items":[{"prompt":"Picture 1 — the early train","frame":"First,","model":"First, Gran and I left London on an early train from platform nine."},{"prompt":"Picture 2 — the harbour","frame":"Then,","model":"Then, we reached the harbour and a man stamped our passports."},{"prompt":"Picture 3 — on the sea","frame":"Next,","model":"Next, we stood on the deck of the ferry and crossed the border."},{"prompt":"Picture 4 — a new land","frame":"After that,","model":"After that, a man said Goedemorgen and we got on a yellow train."},{"prompt":"Picture 5 — Auntie Ria's town","frame":"When we arrived,","model":"When we arrived, Auntie Ria hugged Gran and showed us her town of canals."},{"prompt":"Picture 6 — new food","frame":"That night,","model":"That night, I ate pea soup and learned the word lekker."},{"prompt":"Picture 7 — the market","frame":"On Saturday,","model":"On Saturday, we went to the market and I bought a hot waffle."},{"prompt":"Picture 8 — coming home","frame":"In the end,","model":"In the end, we crossed the border again and I came home with a tiny clay clog."}]}],"labels":{},"theme":{}}</script>
+<script>
+(function(){
+"use strict";
+
+/* =============== manifest, labels, state =============== */
+var M = JSON.parse(document.getElementById("manifest").textContent);
+var DEFAULT_LABELS = {
+  deskTitle:"This chapter's book",
+  deskIntro:"The whole story is here from the start. Press play and the words light up as they are read. Read it three ways, in any order.",
+  openBook:"Open the book ›",
+  bandText:"<b>Nothing is hidden.</b> The words are always on the page. Listen first if you like, read along when you are ready, and tap any sentence to hear it again.",
+  howtoTitle:"How this chapter works",
+  howto:["You will meet the same story <b>three times</b>: listen and watch the words, read along with the voice, then read it yourself. Every pass is open from the start.",
+         "Then come the modules: words, order, reading, grammar, speaking and writing, each with the story beside it. Get one wrong and help appears straight away — then you try again. Nothing is ever locked."],
+  passesHead:"The book — three passes", passesSub:"Do them in order if you can. Each one ticks when you reach the end.",
+  modulesHead:"The modules", modulesSub:"Six to eight short tasks each, with the story on the left. Tap a sentence to hear it.",
+  passTag:"Pass", moduleTag:"Module", railText:"{n} of {m} done",
+  openTheBook:"open the book ›", openTheLeaf:"open the leaf ›",
+  play:"Play", pause:"Pause", restart:"Start again", slow:"Slow", medium:"Medium", normal:"Normal",
+  closeBook:"Close the book ✕", close:"Close ✕", theStory:"The story", theTasks:"The tasks", openBookShort:"Open the book",
+  check:"Check", finish:"Finish the module", finishPass:"I finished this pass ✓",
+  passDone:"Nice — that pass is done.", nextPass:"Next: {title} ›", allPassesDone:"All three passes are done. The modules are waiting below.",
+  endTitle:"The end of the story", endText:"When you have reached here, tick the pass.",
+  hearIt:"Hear it", tapHint:"Tap any sentence to hear it. Dotted words open a meaning.",
+  wordHelp:"Word help", whatMeans:"What does it mean?",
+  record:"Record me", stopRec:"Stop", saidIt:"I said it ✓", noMic:"No microphone here — just say it aloud.",
+  showModel:"Show a model", modelLabel:"One way to write it", write:"Write here…",
+  right:"That's right!", helpLabel:"Some help", tryAgain:"Have another go.",
+  orderHint:"Tap the events in the order they happen in the story.", yourOrder:"Your order", undo:"Undo last", orderRight:"That's the order!",
+  orderWhy:"The story goes like this:",
+  answered:"{n} of {m} answered", allDone:"All done — you can finish the module.", notYet:"{n} left to do.",
+  teacherTitle:"Teacher view", teacherSub:"Voice in use: {layer}. Nothing is locked for students; this bar only resets the saved ticks.",
+  reset:"Reset progress",
+  layerRecorded:"recorded audio with timings", layerSpeech:"this device's speech voice", layerTimer:"no voice on this device — words still light up on a timer",
+  nowPlaying:"Reading…", nowPaused:"Paused", nowReady:"Ready", nowSilent:"No voice on this device — watch the words",
+  footer:"Progress is saved only in this browser.",
+  modelRetell:"One way to tell it", of:"of"
+};
+var L = Object.assign({}, DEFAULT_LABELS, M.labels||{});
+function lbl(k,vars){ var s=L[k]||""; Object.keys(vars||{}).forEach(function(v){ s=s.split("{"+v+"}").join(vars[v]); }); return s; }
+var QS = new URLSearchParams(location.search);
+var TEACHER = QS.get("teacher")==="1";
+var KEY = M.meta.id+":chapter";
+var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+var PASSES = M.passes||[], MODS = M.modules||[], PAGES = M.reading.pages||[], GLOSS = M.reading.glossary||[];
+var SPEEDS=[0.7,0.85,1.0], SPEEDL=["slow","medium","normal"];
+var COLOURS={amber:"var(--amber-solid)",violet:"var(--violet)",navy:"var(--navy)",teal:"var(--teal)",coral:"var(--coral)",ac:"var(--ac)",forest:"var(--ac)"};
+var KINDLBL={words:"words",order:"listening",find:"reading",gap:"grammar",say:"speaking",frame:"writing",retell:"retell"};
+
+var state = {passes:{}, modules:{}, speed:0.85};
+try{ var raw=localStorage.getItem(KEY); if(raw){ var o=JSON.parse(raw); if(o&&typeof o==="object") state=Object.assign(state,o); } }catch(e){}
+if(SPEEDS.indexOf(state.speed)<0) state.speed=0.85;
+function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+function el(i){ return document.getElementById(i); }
+function esc(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function clamp(v,lo,hi){ return Math.max(lo,Math.min(hi,v)); }
+
+/* =============== sentences and words =============== */
+/* One manifest sentence = one highlight unit. Words are split on whitespace; a word
+   keeps its punctuation for display but is compared bare for the glossary. */
+var GLOSSMAP={}; GLOSS.forEach(function(g,i){ GLOSSMAP[String(g.word).toLowerCase()]=i; });
+function bare(w){ return w.toLowerCase().replace(/^[^a-z0-9']+|[^a-z0-9']+$/g,""); }
+var SENT=[];   /* {p, text, words[], starts[] (char offsets)} */
+PAGES.forEach(function(pg,pi){
+  (pg.sentences||[]).forEach(function(t){
+    var text=String(t).trim(), words=text.split(/\s+/).filter(Boolean), starts=[], pos=0;
+    words.forEach(function(w){ var at=text.indexOf(w,pos); starts.push(at<0?pos:at); pos=(at<0?pos:at)+w.length; });
+    SENT.push({p:pi,text:text,words:words,starts:starts});
+  });
+});
+var NSENT=SENT.length;
+function renderStory(withEnd){
+  var h="", si=0;
+  PAGES.forEach(function(pg,pi){
+    h+='<section class="bpage" data-p="'+pi+'">';
+    if(pg.heading) h+='<h2 class="ph">'+esc(pg.heading)+'</h2>';
+    h+='<p class="story">';
+    (pg.sentences||[]).forEach(function(){
+      var S=SENT[si];
+      h+='<span class="s" data-s="'+si+'" role="button" tabindex="0" aria-label="'+esc(S.text)+'">';
+      S.words.forEach(function(w,wi){
+        var g=GLOSSMAP[bare(w)], inner=esc(w);
+        if(g!==undefined){ var m=w.match(/^([^A-Za-z0-9']*)(.*?)([^A-Za-z0-9']*)$/); inner=esc(m[1])+'<u class="glu">'+esc(m[2])+'</u>'+esc(m[3]); }
+        h+=(wi?" ":"")+'<span class="w'+(g!==undefined?' gl':'')+'" data-w="'+wi+'"'+(g!==undefined?' data-g="'+g+'"':'')+'>'+inner+'</span>';
+      });
+      h+='</span> ';
+      si++;
+    });
+    h+='</p></section>';
+  });
+  if(withEnd){
+    h+='<div class="endnote"><b>'+esc(L.endTitle)+'</b><p>'+esc(L.endText)+'</p>'+
+       '<button type="button" class="btn" id="finishpass">'+esc(L.finishPass)+'</button></div>';
+  }
+  return h;
+}
+
+/* =============== the audio engine (three layers) =============== */
+var A = {layer:null, playing:false, cur:-1, curW:-1, stopAfter:null, timer:null, ticker:null, utter:null, audio:null, timings:null, voice:null, seq:0};
+var FORCE = QS.get("audio");            /* ?audio=timer|speech|recorded — test/teacher hook */
+var WPM = +(QS.get("wpm")) || M.reading.wpm || 110;   /* ?wpm= — test hook only */
+var synth = window.speechSynthesis || null;
+function voices(){ try{ return synth?synth.getVoices():[]; }catch(e){ return []; } }
+function pickVoice(){
+  var vs=voices(), want=((M.audio&&M.audio.voice&&M.audio.voice.lang)||"en-GB").toLowerCase();
+  var best=null;
+  vs.forEach(function(v){ var l=(v.lang||"").toLowerCase().replace("_","-");
+    if(!best && l===want) best=v; });
+  if(!best) vs.forEach(function(v){ var l=(v.lang||"").toLowerCase(); if(!best && l.indexOf(want.slice(0,2))===0) best=v; });
+  return best||vs[0]||null;
+}
+if(synth && synth.addEventListener){ synth.addEventListener("voiceschanged",function(){ A.voice=pickVoice(); paintTeacher(); }); }
+function decideLayer(){
+  if(FORCE==="timer") return "timer";
+  if(A.timings && A.timings.length && A.audio && FORCE!=="speech") return "recorded";
+  if(FORCE==="recorded") return "timer";
+  if(synth && voices().length){ A.voice=A.voice||pickVoice(); return "speech"; }
+  return "timer";
+}
+/* recorded layer setup */
+function resolveAudio(p){ if(!p) return ""; if(/^(https?:)?\/\//.test(p)||p[0]==="/") return p; return ((M.audio&&M.audio.base)||"")+p; }
+(function setupRecorded(){
+  if(!M.audio||!M.audio.story||!M.audio.timings) return;
+  var au=new Audio(); au.preload="auto"; au.src=resolveAudio(M.audio.story);
+  fetch(resolveAudio(M.audio.timings)).then(function(r){ return r.ok?r.json():[]; }).then(function(j){
+    if(Array.isArray(j)&&j.length){ A.timings=j.slice().sort(function(a,b){return a.s-b.s;}); A.audio=au;
+      au.addEventListener("ended",function(){ if(A.layer==="recorded") finished(); });
+    }
+    paintTeacher();
+  }).catch(function(){ paintTeacher(); });
+})();
+
+function layerName(){ var l=A.layer||decideLayer(); return l==="recorded"?L.layerRecorded:(l==="speech"?L.layerSpeech:L.layerTimer); }
+function wordMs(w){ var base=60000/WPM/state.speed; var f=0.55+0.09*Math.min(w.length,12); return base*f; }
+function clearTimers(){ if(A.timer){clearTimeout(A.timer);A.timer=null;} if(A.ticker){clearTimeout(A.ticker);A.ticker=null;} }
+
+function highlight(si,wi){
+  if(si!==A.cur){
+    document.querySelectorAll(".s.cur-s").forEach(function(n){ n.classList.remove("cur-s"); });
+    document.querySelectorAll('[data-s="'+si+'"]').forEach(function(n){ n.classList.add("cur-s"); });
+    A.cur=si; A.curW=-1;
+    if(SENT[si]) el("live").textContent=SENT[si].text;
+  }
+  if(wi!==A.curW){
+    document.querySelectorAll(".w.cur-w").forEach(function(n){ n.classList.remove("cur-w"); });
+    if(wi>=0) document.querySelectorAll('[data-s="'+si+'"] [data-w="'+wi+'"]').forEach(function(n){ n.classList.add("cur-w"); });
+    A.curW=wi;
+  }
+  keepVisible(si,wi);
+}
+function clearHighlight(){
+  document.querySelectorAll(".s.cur-s,.w.cur-w").forEach(function(n){ n.classList.remove("cur-s","cur-w"); });
+  A.cur=-1; A.curW=-1;
+}
+function keepVisible(si,wi){
+  if(bookOpen()){
+    var t=flow.querySelector('[data-s="'+si+'"]'+(wi>=0?' [data-w="'+wi+'"]':''));
+    if(t){ var p=pageOf(t); if(p!==page) go(p); }
+  }
+  if(leafOpen()){
+    var s=el("ltext").querySelector('[data-s="'+si+'"]');
+    if(s){ try{ s.scrollIntoView({block:"nearest",behavior:REDUCED?"auto":"smooth"}); }catch(e){ s.scrollIntoView(); } }
+  }
+}
+function setNow(txt){ el("pnow").innerHTML=txt; }
+function paintPlay(){
+  var b=el("pplay"); b.textContent=(A.playing?"⏸ ":"▶ ")+(A.playing?L.pause:L.play); b.setAttribute("aria-pressed",A.playing?"true":"false");
+}
+
+/* play from sentence `from`; if single, stop after that sentence */
+function play(from,single){
+  stop(false);
+  if(!NSENT) return;
+  from=clamp(from|0,0,NSENT-1);
+  A.layer=decideLayer(); A.playing=true; A.stopAfter=single?from:null; A.seq++;
+  paintPlay(); paintTeacher();
+  setNow("<b>"+esc(L.nowPlaying)+"</b>"+(A.layer==="timer"?" · "+esc(L.nowSilent):""));
+  if(A.layer==="recorded") playRecorded(from);
+  else if(A.layer==="speech") speakSentence(from);
+  else timerSentence(from);
+}
+function pause(){ stop(true); setNow(esc(L.nowPaused)); }
+function stop(keepMark){
+  var wasPlaying=A.playing;
+  A.playing=false; A.seq++;
+  clearTimers();
+  if(synth){ try{ synth.cancel(); }catch(e){} }
+  if(A.audio){ try{ A.audio.pause(); }catch(e){} }
+  if(A.raf){ cancelAnimationFrame(A.raf); A.raf=null; }
+  if(!keepMark) clearHighlight();
+  if(wasPlaying) paintPlay();
+}
+function nextSentence(si){
+  if(!A.playing) return;
+  if(A.stopAfter!==null && si>=A.stopAfter){ endSingle(); return; }
+  if(si+1>=NSENT){ finished(); return; }
+  var seq=A.seq;
+  A.timer=setTimeout(function(){ if(seq!==A.seq) return;
+    if(A.layer==="speech") speakSentence(si+1); else timerSentence(si+1); }, 380/state.speed);
+}
+function endSingle(){ A.playing=false; clearTimers(); paintPlay(); setNow(esc(L.nowReady)); }
+function finished(){
+  A.playing=false; clearTimers(); paintPlay(); setNow(esc(L.nowReady));
+  if(bookOpen() && curPass && (curPass.key!=="alone")) tickPass(curPass.key);
+}
+/* layer 3 — the silent timer */
+function timerSentence(si){
+  var S=SENT[si], wi=0, seq=A.seq;
+  function tick(){
+    if(seq!==A.seq) return;
+    if(wi>=S.words.length){ highlight(si,-1); nextSentence(si); return; }
+    highlight(si,wi); var ms=wordMs(S.words[wi]); wi++;
+    A.ticker=setTimeout(tick,ms);
+  }
+  tick();
+}
+/* layer 2 — Web Speech, sentence by sentence; onboundary drives the word, a ticker
+   covers voices that never send boundaries (some iPad/Android voices). */
+function speakSentence(si){
+  var S=SENT[si], seq=A.seq, sawBoundary=false, wi=0, u;
+  highlight(si,0);
+  try{
+    u=new SpeechSynthesisUtterance(S.text);
+    if(A.voice) u.voice=A.voice;
+    u.lang=(A.voice&&A.voice.lang)||((M.audio&&M.audio.voice&&M.audio.voice.lang)||"en-GB");
+    u.rate=state.speed*((M.audio&&M.audio.voice&&M.audio.voice.rate)||1);
+    u.onboundary=function(ev){
+      if(seq!==A.seq) return;
+      if(ev.name&&ev.name!=="word") return;
+      sawBoundary=true; if(A.ticker){clearTimeout(A.ticker);A.ticker=null;}
+      var ci=ev.charIndex|0, w=0;
+      for(var k=0;k<S.starts.length;k++){ if(S.starts[k]<=ci) w=k; else break; }
+      highlight(si,w);
+    };
+    u.onend=function(){ if(seq!==A.seq) return; clearTimers(); highlight(si,-1); nextSentence(si); };
+    u.onerror=function(ev){
+      if(seq!==A.seq) return;
+      if(ev&&ev.error==="interrupted") return;
+      /* the voice failed — fall to the timer for the rest of the book */
+      A.layer="timer"; clearTimers(); paintTeacher(); timerSentence(si);
+    };
+    A.utter=u;
+    synth.speak(u);
+    /* fallback ticker: estimate words until a boundary event proves the voice reports them */
+    function tick(){
+      if(seq!==A.seq||sawBoundary) return;
+      if(wi<S.words.length){ highlight(si,wi); A.ticker=setTimeout(tick,wordMs(S.words[wi])); wi++; }
+    }
+    A.ticker=setTimeout(tick,120);
+  }catch(e){ A.layer="timer"; timerSentence(si); }
+}
+/* layer 1 — recorded audio with timings [{i,w,s,e}] */
+function playRecorded(si){
+  var first=null, firstIdx=0; for(var k=0;k<A.timings.length;k++){ if(A.timings[k].i===si){ first=A.timings[k]; firstIdx=k; break; } }
+  var au=A.audio, seq=A.seq, target=first?first.s:0, stopAt=Infinity; au.playbackRate=state.speed;
+  if(A.stopAfter!==null){ stopAt=-1; A.timings.forEach(function(e){ if(e.i===A.stopAfter && e.e>stopAt) stopAt=e.e; }); if(stopAt<0) stopAt=Infinity; }
+  highlight(si,0);
+  /* a seek before the metadata is in is silently dropped by Chrome — wait for it */
+  function start(){
+    if(seq!==A.seq) return;
+    try{ au.currentTime=target; }catch(e){}
+    var pr=au.play(); if(pr&&pr.catch) pr.catch(function(){ if(seq!==A.seq) return; A.layer="timer"; paintTeacher(); timerSentence(si); });
+    A.raf=requestAnimationFrame(frame);
+  }
+  if(au.readyState>=1) start(); else { au.addEventListener("loadedmetadata",start,{once:true}); try{ au.load(); }catch(e){} }
+  var idx=firstIdx;
+  function frame(){
+    if(seq!==A.seq) return;
+    if(au.seeking||Math.abs(au.currentTime-target)>2&&au.currentTime<target){ A.raf=requestAnimationFrame(frame); return; }
+    var t=au.currentTime;
+    while(idx<A.timings.length-1 && A.timings[idx+1].s<=t) idx++;
+    while(idx>0 && A.timings[idx].s>t) idx--;
+    var e=A.timings[idx];
+    if(A.stopAfter!==null && (t>=stopAt || (e && e.s<=t && e.i>A.stopAfter))){ au.pause(); highlight(A.stopAfter,-1); endSingle(); return; }
+    if(e && e.s<=t){
+      highlight(e.i, t<=e.e?e.w:-1);
+    }
+    A.raf=requestAnimationFrame(frame);
+  }
+}
+/* speak a loose line (say items, glossary) — no page highlight; container words optional */
+function speakLine(text,container){
+  stop(false);
+  var words=container?container.querySelectorAll(".w"):[];
+  var layer=decideLayer(); if(layer==="recorded") layer=(synth&&voices().length)?"speech":"timer";
+  A.playing=false; var seq=++A.seq, wi=0;
+  function mark(i){ Array.prototype.forEach.call(words,function(n,k){ n.classList.toggle("cur-w",k===i); }); }
+  function tick(){ if(seq!==A.seq) return; if(wi>=words.length){ mark(-1); return; } mark(wi); A.ticker=setTimeout(tick,wordMs(words[wi].textContent)); wi++; }
+  if(layer==="speech"){
+    try{
+      var u=new SpeechSynthesisUtterance(text), saw=false;
+      if(A.voice) u.voice=A.voice; u.rate=state.speed;
+      u.onboundary=function(ev){ if(seq!==A.seq||!words.length) return; saw=true; clearTimers();
+        var ci=ev.charIndex|0, w=0, pos=0; var parts=text.split(/\s+/);
+        for(var k=0;k<parts.length;k++){ var at=text.indexOf(parts[k],pos); if(at<=ci) w=k; pos=at+parts[k].length; } mark(Math.min(w,words.length-1)); };
+      u.onend=function(){ if(seq!==A.seq) return; clearTimers(); mark(-1); };
+      u.onerror=function(){ if(seq!==A.seq) return; if(words.length){ clearTimers(); tick(); } };
+      synth.speak(u);
+      if(words.length) A.ticker=setTimeout(function(){ if(!saw) tick(); },120);
+      return;
+    }catch(e){}
+  }
+  if(words.length) tick();
+}
+function speedSet(v){
+  state.speed=v; save(); paintSpeed();
+  if(A.audio) A.audio.playbackRate=v;
+  if(A.playing && A.layer!=="recorded"){ var s=A.cur, single=A.stopAfter; play(s,single!==null); }
+}
+function paintSpeed(){
+  var host=el("speed"); host.innerHTML="";
+  SPEEDS.forEach(function(v,i){
+    var b=document.createElement("button"); b.type="button"; b.textContent=L[SPEEDL[i]]; b.dataset.speed=v;
+    b.setAttribute("aria-pressed",state.speed===v?"true":"false");
+    b.addEventListener("click",function(){ speedSet(v); });
+    host.appendChild(b);
+  });
+}
+el("pplay").addEventListener("click",function(){ if(A.playing) pause(); else play(A.cur>=0?A.cur:0,false); });
+el("prestart").addEventListener("click",function(){ play(0,false); });
+
+/* sentence tap = hear that sentence; glossary word tap = the sheet */
+function wireStory(root){
+  root.addEventListener("click",function(e){
+    var g=e.target.closest(".gl"); if(g){ e.stopPropagation(); openGloss(+g.dataset.g); return; }
+    var s=e.target.closest(".s"); if(s){ play(+s.dataset.s,true); }
+  });
+  root.addEventListener("keydown",function(e){
+    if(e.key!=="Enter"&&e.key!==" ") return;
+    var s=e.target.closest(".s"); if(s){ e.preventDefault(); play(+s.dataset.s,true); }
+  });
+}
+
+/* =============== glossary sheet =============== */
+var gReturn=null;
+function openGloss(i){
+  var g=GLOSS[i]; if(!g) return;
+  gReturn=document.activeElement;
+  el("gword").textContent=g.word; el("gsay").textContent=g.say||""; el("gmeans").textContent=g.means||"";
+  el("gsheet").hidden=false; el("gclose").focus();
+}
+function closeGloss(){ el("gsheet").hidden=true; if(gReturn&&gReturn.focus) gReturn.focus(); }
+el("gclose").addEventListener("click",closeGloss);
+el("gsheet").addEventListener("pointerdown",function(e){ if(e.target===el("gsheet")) closeGloss(); });
+el("ghear").addEventListener("click",function(){ speakLine(el("gword").textContent,null); });
+
+/* =============== the book (pagination as in the reference) =============== */
+var wrapEl=el("bookwrap"), flow=el("flow"), vp=el("viewport");
+var page=0,pages=1,colW=0,per=1,GAP=56,PADL=0,COLEM=30,curPass=null,bookReturn=null;
+function bookOpen(){ return wrapEl.classList.contains("on"); }
+function buildBook(){
+  flow.innerHTML=renderStory(true);
+  el("finishpass").addEventListener("click",function(){ if(curPass) tickPass(curPass.key); });
+  page=0; layout();
+}
+function layout(){
+  var w=vp.clientWidth;
+  if(!w){ requestAnimationFrame(layout); return; }
+  flow.style.paddingLeft=""; flow.style.paddingRight="";
+  var cs=getComputedStyle(flow);
+  var padL=parseFloat(cs.paddingLeft)||0, padR=parseFloat(cs.paddingRight)||0;
+  var inner=w-padL-padR;
+  per = inner>=900 ? 2 : 1;
+  GAP = per===2 ? clamp(inner*0.07,56,110) : 56;
+  var COLMAX=COLEM*(parseFloat(cs.fontSize)||18);
+  var maxInner = per===2 ? (COLMAX*2+GAP) : COLMAX;
+  if(inner>maxInner){ var extra=(inner-maxInner)/2; padL+=extra; padR+=extra; inner=maxInner;
+    flow.style.paddingLeft=padL+"px"; flow.style.paddingRight=padR+"px"; }
+  colW = per===2 ? (inner-GAP)/2 : inner; PADL=padL;
+  flow.style.width=w+"px"; flow.style.columnWidth=colW+"px"; flow.style.columnGap=GAP+"px";
+  flow.style.transform="translateX(0px)";
+  vp.classList.toggle("spread",per===2); el("openbook").classList.toggle("spread",per===2);
+  vp.style.setProperty("--gut",(padL+colW+GAP/2)+"px");
+  requestAnimationFrame(function(){
+    var step=colW+GAP, fr=flow.getBoundingClientRect(), right=0;
+    flow.querySelectorAll("*").forEach(function(n2){
+      if(n2.children.length) return;
+      var r2=n2.getBoundingClientRect(); if(r2.width<1||r2.height<1) return;
+      var edge=r2.right-fr.left; if(edge>right) right=edge;
+    });
+    var byScroll=Math.max(1,Math.round((flow.scrollWidth-padL-padR+GAP)/step));
+    var byContent=right>0?Math.floor((right-padL-1)/step)+1:byScroll;
+    pages=Math.max(1,Math.ceil(Math.min(byScroll,byContent)/per));
+    if(page>=pages) page=pages-1;
+    render();
+    if(A.cur>=0) keepVisible(A.cur,A.curW);
+  });
+}
+function pageOf(node){
+  var fr=flow.getBoundingClientRect(), r=node.getBoundingClientRect();
+  var col=Math.floor((r.left-fr.left-PADL+2)/(colW+GAP));
+  return clamp(Math.floor(col/per),0,pages-1);
+}
+function render(){
+  flow.style.transform="translateX("+(-page*per*(colW+GAP))+"px)";
+  var d=el("dots"); d.innerHTML="";
+  for(var i=0;i<pages;i++){ var s=document.createElement("i"); if(i===page)s.className="on"; d.appendChild(s); }
+  el("prev").disabled=page===0; el("next").disabled=page>=pages-1;
+}
+function go(n){ var t=clamp(n,0,pages-1); if(t!==page){ page=t; render(); } }
+function openBook(passKey){
+  curPass=PASSES.filter(function(p){return p.key===passKey;})[0]||PASSES[0]||{key:"alone",title:""};
+  bookReturn=document.activeElement;
+  el("btag").textContent=lbl("passTag")+" "+(PASSES.indexOf(curPass)+1);
+  el("btitle").textContent=curPass.title||M.meta.title;
+  el("passnote").className="passnote"; el("passnote").innerHTML="";
+  wrapEl.classList.add("on"); document.body.style.overflow="hidden";
+  buildBook(); setNow(esc(L.nowReady)); el("bclose").focus();
+  if(curPass.key!=="alone" && QS.get("autoplay")!=="0"){ setTimeout(function(){ if(bookOpen()) play(0,false); },350); }
+}
+function closeBook(){
+  stop(false); wrapEl.classList.remove("on");
+  if(!leafOpen()) document.body.style.overflow="";
+  paint(); if(bookReturn&&bookReturn.focus) bookReturn.focus();
+}
+function tickPass(key){
+  var first=!state.passes[key];
+  state.passes[key]=true; save(); paint();
+  var i=PASSES.map(function(p){return p.key;}).indexOf(key), nxt=PASSES[i+1];
+  var pn=el("passnote"); pn.className="passnote on";
+  pn.innerHTML="<span>"+esc(L.passDone)+"</span>"+(nxt?'<button type="button" class="btn" id="gonext">'+esc(lbl("nextPass",{title:nxt.title}))+'</button>':'<span>'+esc(L.allPassesDone)+'</span>');
+  if(nxt) el("gonext").addEventListener("click",function(){ closeBook(); openBook(nxt.key); });
+  el("live").textContent=L.passDone; void first;
+}
+
+/* gestures — touch, cursor, trackpad (as in the reference) */
+var sx=null,sy=null,st=0,drag=false,pid=null;
+function baseX(){ return -page*per*(colW+GAP); }
+vp.addEventListener("pointerdown",function(e){
+  if(e.target.closest("button,a,input,label,audio,.s")){ sx=null; return; }
+  if(e.pointerType==="mouse"&&e.button!==0) return;
+  sx=e.clientX; sy=e.clientY; st=Date.now(); drag=false; pid=e.pointerId;
+});
+vp.addEventListener("pointermove",function(e){
+  if(sx===null||e.pointerId!==pid) return;
+  var dx=e.clientX-sx, dy=e.clientY-sy;
+  if(!drag){ if(Math.abs(dx)<8||Math.abs(dx)<=Math.abs(dy)) return;
+    drag=true; vp.classList.add("dragging"); flow.style.transition="none";
+    try{ vp.setPointerCapture(e.pointerId); }catch(_){} }
+  var over=(page===0&&dx>0)||(page>=pages-1&&dx<0);
+  flow.style.transform="translateX("+(baseX()+(over?dx*0.32:dx))+"px)";
+});
+function endDrag(e){
+  if(sx===null||(e&&e.pointerId!==pid)) return;
+  var dx=(e?e.clientX:sx)-sx, dy=(e?e.clientY:sy)-sy, elapsed=Date.now()-st, wasDrag=drag;
+  sx=null; drag=false; pid=null;
+  vp.classList.remove("dragging"); flow.style.transition="";
+  if(wasDrag){
+    var far=Math.abs(dx)>Math.max(48,vp.clientWidth*0.2);
+    var flick=Math.abs(dx)>60&&(Math.abs(dx)/Math.max(elapsed,1))>0.7;
+    if(far||flick) go(page+(dx<0?1:-1));
+    render(); return;
+  }
+  if(Math.abs(dx)<10&&Math.abs(dy)<10&&elapsed<600){
+    var r=vp.getBoundingClientRect(), rel=((e?e.clientX:0)-r.left)/r.width;
+    if(rel<0.2) go(page-1); else if(rel>0.8) go(page+1);
+  }
+}
+vp.addEventListener("pointerup",endDrag);
+vp.addEventListener("pointercancel",endDrag);
+vp.addEventListener("dragstart",function(e){ if(drag) e.preventDefault(); });
+document.addEventListener("selectstart",function(e){ if(drag) e.preventDefault(); });
+var wacc=0,wlock=0;
+vp.addEventListener("wheel",function(e){
+  if(Math.abs(e.deltaX)<=Math.abs(e.deltaY)) return;
+  e.preventDefault();
+  var now=Date.now(); if(now<wlock) return;
+  wacc+=e.deltaX;
+  if(Math.abs(wacc)>55){ go(page+(wacc>0?1:-1)); wacc=0; wlock=now+520; }
+},{passive:false});
+vp.addEventListener("scroll",function(){ if(vp.scrollLeft||vp.scrollTop){ vp.scrollLeft=0; vp.scrollTop=0; } });
+el("prev").addEventListener("click",function(){ go(page-1); });
+el("next").addEventListener("click",function(){ go(page+1); });
+el("bclose").addEventListener("click",closeBook);
+wrapEl.addEventListener("pointerdown",function(e){ if(e.target===wrapEl) closeBook(); });
+window.addEventListener("resize",function(){ if(bookOpen()) layout(); });
+if(document.fonts&&document.fonts.ready){
+  document.fonts.ready.then(function(){ if(bookOpen()) layout(); });
+  document.fonts.addEventListener&&document.fonts.addEventListener("loadingdone",function(){ if(bookOpen()) layout(); });
+}
+document.addEventListener("keydown",function(e){
+  if(!el("gsheet").hidden){ if(e.key==="Escape") closeGloss(); return; }
+  if(leafOpen()&&!bookOpen()){ if(e.key==="Escape") closeLeaf(); return; }
+  if(!bookOpen()) return;
+  if(e.target&&e.target.closest&&e.target.closest("textarea,input")) return;
+  if(e.key==="ArrowRight"){ e.preventDefault(); go(page+1); }
+  if(e.key==="ArrowLeft"){ e.preventDefault(); go(page-1); }
+  if(e.key==="Escape") closeBook();
+});
+wireStory(flow);
+
+/* =============== the leaf =============== */
+var leafWrap=el("leafwrap"), leafEl=el("leaf"), curMod=null, items=[], leafReturn=null;
+function leafOpen(){ return leafWrap.classList.contains("on"); }
+function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; } return a; }
+function wordSpans(text){ return text.split(/\s+/).filter(Boolean).map(function(w){ return '<span class="w">'+esc(w)+'</span>'; }).join(" "); }
+function buildText(Mo){
+  var t="";
+  if(Mo.table&&Mo.table.rows&&Mo.table.rows.length){
+    t+='<div class="gwrap"><table class="gtab mini">'+(Mo.table.caption?'<caption>'+esc(Mo.table.caption)+'</caption>':'');
+    Mo.table.rows.forEach(function(r,ri){ t+='<tr>'+r.map(function(c){ return (ri===0?'<th>':'<td>')+esc(c)+(ri===0?'</th>':'</td>'); }).join("")+'</tr>'; });
+    t+='</table></div>';
+  }
+  t+='<h4>'+esc(M.meta.title)+'</h4><p class="lhint">'+esc(L.tapHint)+'</p>'+renderStory(false);
+  el("ltext").innerHTML=t;
+}
+function buildEx(Mo){
+  var host=el("lex"), set=Mo.items||[];
+  host.innerHTML=Mo.lead?'<p class="llead">'+esc(Mo.lead)+'</p>':'';
+  items=[];
+  if(Mo.kind==="order"){
+    items.push({resolved:false,helped:false,right:false,order:[]});
+    var d=document.createElement("div"); d.className="xi"; d.dataset.i=0;
+    var pool=shuffle(set.map(function(x,k){return k;}));
+    d.innerHTML='<span class="xn">1 '+lbl("of")+' 1</span><p class="xq">'+esc(L.orderHint)+'</p>'+
+      '<div class="pool">'+pool.map(function(k){ return '<button type="button" class="opt" data-pick="'+k+'">'+esc(set[k].text)+'</button>'; }).join("")+'</div>'+
+      '<p class="ordlbl">'+esc(L.yourOrder)+'</p><div class="seq" id="seq"></div>'+
+      '<div class="xrow"><button type="button" class="btn ghost" data-undo>'+esc(L.undo)+'</button>'+
+      '<button type="button" class="btn" data-ocheck>'+esc(L.check)+'</button></div>'+
+      '<div class="xwhy"><b>'+esc(L.helpLabel)+'</b>'+esc(L.orderWhy)+'<ol>'+set.map(function(x){return '<li>'+esc(x.text)+'</li>';}).join("")+'</ol>'+esc(L.tryAgain)+'</div>'+
+      '<div class="xok">'+esc(L.orderRight)+'</div>';
+    host.appendChild(d); return;
+  }
+  set.forEach(function(x,i){
+    items.push({resolved:false,helped:false,right:false});
+    var d=document.createElement("div"); d.className="xi"; d.dataset.i=i;
+    var h='<span class="xn">'+(i+1)+' / '+set.length+'</span>', why="";
+    if(Mo.kind==="words"){
+      h+='<p class="xword"><span>'+esc(x.word)+'</span><button type="button" class="opt hear" data-hear="'+esc(x.word)+'">🔊 '+esc(L.hearIt)+'</button></p>'+
+         '<p class="xq">'+esc(L.whatMeans)+'</p>'+opts(x.options,i);
+      why=x.why||('<i>'+esc(x.word)+'</i> — '+esc(x.means||""));
+    } else if(Mo.kind==="find"){
+      h+='<p class="xq">'+esc(x.q)+'</p>'+opts(x.options,i); why=esc(x.why||"");
+    } else if(Mo.kind==="gap"){
+      h+='<p class="xgap">'+esc(x.before||"")+' <span class="blank" data-blank>____</span> '+esc(x.after||"")+'</p>'+opts(x.options,i);
+      why=esc(x.why||((x.before||"")+" "+x.options[x.answer]+" "+(x.after||"")));
+    } else if(Mo.kind==="say"){
+      var lineId="say"+i;
+      h+='<p class="xline" id="'+lineId+'">'+wordSpans(x.line)+'</p>'+(x.tip?'<p class="xtip">'+esc(x.tip)+'</p>':'')+
+         '<div class="xrow"><button type="button" class="btn" data-hear="'+esc(x.line)+'" data-hearin="'+lineId+'">🔊 '+esc(L.hearIt)+'</button>'+
+         '<button type="button" class="btn rec" data-rec="'+i+'">⏺ '+esc(L.record)+'</button>'+
+         '<span class="recout" data-recout="'+i+'"></span>'+
+         '<button type="button" class="btn ghost" data-said="'+i+'">'+esc(L.saidIt)+'</button></div>';
+    } else if(Mo.kind==="frame"||Mo.kind==="retell"){
+      if(x.prompt) h+='<p class="xq">'+esc(x.prompt)+'</p>';
+      h+='<textarea class="xta" data-in="'+i+'" data-frame="'+esc(x.frame||"")+'" aria-label="'+esc(L.write)+'" placeholder="'+esc(L.write)+'">'+esc(x.frame?x.frame+" ":"")+'</textarea>';
+      if(x.model) h+='<div class="xrow" style="margin-top:8px"><button type="button" class="btn ghost" data-model="'+i+'">'+esc(L.showModel)+'</button></div>'+
+                     '<div class="xmodel"><b>'+esc(Mo.kind==="retell"?L.modelRetell:L.modelLabel)+'</b>'+esc(x.model)+'</div>';
+    }
+    if(why) h+='<div class="xwhy"><b>'+esc(L.helpLabel)+'</b>'+why+'<br>'+esc(L.tryAgain)+'</div>';
+    h+='<div class="xok">'+esc(L.right)+'</div>';
+    d.innerHTML=h; host.appendChild(d);
+  });
+  function opts(o,i){ return '<div class="opts">'+(o||[]).map(function(t,oi){ return '<button type="button" class="opt" data-pick="'+i+'" data-o="'+oi+'" aria-pressed="false">'+esc(t)+'</button>'; }).join("")+'</div>'; }
+  host.scrollTop=0;
+}
+function openLeaf(key){
+  var Mo=MODS.filter(function(m){return m.key===key;})[0]; if(!Mo) return;
+  stop(false); curMod=Mo; leafReturn=document.activeElement;
+  leafEl.style.setProperty("--c",COLOURS[Mo.colour]||COLOURS.ac);
+  el("ltag").textContent=L.moduleTag+" "+(MODS.indexOf(Mo)+1)+" · "+(KINDLBL[Mo.kind]||Mo.kind);
+  el("ltitle").textContent=Mo.title;
+  leafEl.classList.remove("show-text"); leafEl.classList.add("show-ex");
+  el("tabText").classList.remove("on"); el("tabEx").classList.add("on");
+  el("lverdict").className="verdict"; el("lverdict").innerHTML="";
+  leafWrap.classList.add("on"); document.body.style.overflow="hidden";
+  buildText(Mo); buildEx(Mo); progress(); el("lclose").focus();
+}
+function closeLeaf(){
+  stop(false); stopRec(); leafWrap.classList.remove("on");
+  if(!bookOpen()) document.body.style.overflow="";
+  curMod=null; paint(); if(leafReturn&&leafReturn.focus) leafReturn.focus();
+}
+function card(i){ return el("lex").querySelector('.xi[data-i="'+i+'"]'); }
+function progress(){
+  var n=items.filter(function(it){return it.resolved;}).length, total=items.length||1;
+  el("lprog").textContent=lbl("answered",{n:n,m:total});
+  el("lbarfill").style.width=Math.round(n/total*100)+"%";
+  el("ldone").disabled=n<total;
+  return n===total;
+}
+function markRight(i){ var c=card(i); c.classList.remove("wrong"); c.classList.add("right"); items[i].right=true; items[i].resolved=true; progress(); }
+function markHelp(i){ var c=card(i); c.classList.add("wrong","shown"); items[i].helped=true; items[i].resolved=true; el("live").textContent=L.helpLabel; progress(); }
+function checkOrder(){
+  var it=items[0], set=curMod.items, c=card(0), seq=c.querySelector("#seq");
+  if(it.order.length<set.length) return;
+  var ok=it.order.every(function(k,pos){return k===pos;});
+  Array.prototype.forEach.call(seq.children,function(b,pos){ b.classList.toggle("ok",it.order[pos]===pos); b.classList.toggle("bad",it.order[pos]!==pos); });
+  if(ok){ markRight(0); }
+  else { markHelp(0); it.retry=true; c.querySelectorAll(".pool .opt").forEach(function(b){ b.disabled=false; }); }
+}
+function resetOrder(){
+  var it=items[0], c=card(0); it.order=[]; c.querySelector("#seq").innerHTML="";
+  c.querySelectorAll(".pool .opt").forEach(function(b){ b.disabled=false; });
+}
+el("lex").addEventListener("click",function(e){
+  var pick=e.target.closest("[data-pick]");
+  if(pick){
+    if(curMod.kind==="order"){
+      var it=items[0], k=+pick.dataset.pick; if(it.right) return;
+      if(it.retry){ resetOrder(); it.retry=false; card(0).classList.remove("wrong"); }
+      it.order.push(k); pick.disabled=true;
+      var b=document.createElement("div"); b.className="opt"; b.innerHTML='<i>'+it.order.length+'</i><span>'+esc(curMod.items[k].text)+'</span>';
+      card(0).querySelector("#seq").appendChild(b);
+      if(it.order.length===curMod.items.length) checkOrder();
+      return;
+    }
+    var i=+pick.dataset.pick, x=curMod.items[i], c=card(i);
+    if(items[i].right) return;
+    c.querySelectorAll(".opt[data-o]").forEach(function(b){ b.setAttribute("aria-pressed","false"); b.classList.remove("wrong"); });
+    pick.setAttribute("aria-pressed","true");
+    if(+pick.dataset.o===x.answer){
+      pick.classList.add("right"); markRight(i);
+      var bl=c.querySelector("[data-blank]"); if(bl) bl.textContent=x.options[x.answer];
+    } else { pick.classList.add("wrong"); markHelp(i); }
+    return;
+  }
+  var undo=e.target.closest("[data-undo]");
+  if(undo){ var it2=items[0]; if(it2.right||!it2.order.length) return; var k2=it2.order.pop();
+    var sq=card(0).querySelector("#seq"); sq.removeChild(sq.lastChild);
+    card(0).querySelector('.pool [data-pick="'+k2+'"]').disabled=false; card(0).classList.remove("wrong"); return; }
+  var oc=e.target.closest("[data-ocheck]"); if(oc){ checkOrder(); return; }
+  var hear=e.target.closest("[data-hear]");
+  if(hear){ var cont=hear.dataset.hearin?el(hear.dataset.hearin):null; speakLine(hear.dataset.hear,cont); return; }
+  var said=e.target.closest("[data-said]");
+  if(said){ var si=+said.dataset.said; card(si).classList.add("done"); items[si].resolved=true; items[si].right=true; progress(); return; }
+  var rec=e.target.closest("[data-rec]"); if(rec){ toggleRec(rec,+rec.dataset.rec); return; }
+  var mdl=e.target.closest("[data-model]"); if(mdl){ card(+mdl.dataset.model).classList.add("model"); return; }
+});
+el("lex").addEventListener("input",function(e){
+  var ta=e.target.closest("[data-in]"); if(!ta) return;
+  var i=+ta.dataset.in, frame=(ta.dataset.frame||"").trim(), v=ta.value.trim();
+  var ok=v.length>0 && v.length>frame.length;
+  items[i].resolved=ok; items[i].right=ok; card(i).classList.toggle("done",ok); progress();
+});
+function checkLeaf(){
+  if(curMod.kind==="order" && !items[0].resolved && items[0].order.length===curMod.items.length) checkOrder();
+  var n=items.filter(function(it){return it.resolved;}).length, total=items.length;
+  var v=el("lverdict"); v.className="verdict "+(n===total?"pass":"help");
+  v.innerHTML=n===total?"<b>"+esc(L.allDone)+"</b>":"<b>"+esc(lbl("notYet",{n:total-n}))+"</b>";
+  progress();
+}
+el("lcheck").addEventListener("click",checkLeaf);
+el("ldone").addEventListener("click",function(){ if(!progress()) return; state.modules[curMod.key]=true; save(); closeLeaf(); });
+el("lclose").addEventListener("click",closeLeaf);
+el("lbook").addEventListener("click",function(){ openBook("alone"); });
+leafWrap.addEventListener("pointerdown",function(e){ if(e.target===leafWrap) closeLeaf(); });
+el("tabText").addEventListener("click",function(){ leafEl.classList.add("show-text"); leafEl.classList.remove("show-ex"); this.classList.add("on"); el("tabEx").classList.remove("on"); });
+el("tabEx").addEventListener("click",function(){ leafEl.classList.add("show-ex"); leafEl.classList.remove("show-text"); this.classList.add("on"); el("tabText").classList.remove("on"); });
+wireStory(el("ltext"));
+
+/* recording (say items) — MediaRecorder, no scoring */
+var REC_OK=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
+var rec=null, recBtn=null, recChunks=[], recStream=null, recTimer=null;
+function stopRec(){ if(rec&&rec.state!=="inactive"){ try{ rec.stop(); }catch(e){} } if(recTimer){clearTimeout(recTimer);recTimer=null;} }
+function toggleRec(btn,i){
+  if(!REC_OK) return;
+  if(rec&&rec.state==="recording"){ stopRec(); return; }
+  navigator.mediaDevices.getUserMedia({audio:true}).then(function(stream){
+    recStream=stream; recChunks=[]; recBtn=btn;
+    rec=new MediaRecorder(stream);
+    rec.ondataavailable=function(ev){ if(ev.data&&ev.data.size) recChunks.push(ev.data); };
+    rec.onstop=function(){
+      stream.getTracks().forEach(function(t){t.stop();});
+      btn.classList.remove("live"); btn.textContent="⏺ "+L.record;
+      var blob=new Blob(recChunks,{type:rec.mimeType||"audio/webm"}), url=URL.createObjectURL(blob);
+      var out=el("lex").querySelector('[data-recout="'+i+'"]'); out.innerHTML='<audio controls src="'+url+'"></audio>';
+      card(i).classList.add("done"); items[i].resolved=true; items[i].right=true; progress();
+    };
+    rec.start(); btn.classList.add("live"); btn.textContent="■ "+L.stopRec;
+    recTimer=setTimeout(stopRec,15000);
+  }).catch(function(){ btn.disabled=true; btn.textContent=L.noMic; });
+}
+
+/* =============== the page =============== */
+function paint(){
+  var rail=el("rail"); rail.innerHTML=""; var n=0, total=PASSES.length+MODS.length;
+  PASSES.forEach(function(p){ var i=document.createElement("i"); if(state.passes[p.key]){ i.className="on"; n++; } rail.appendChild(i); });
+  MODS.forEach(function(m){ var i=document.createElement("i"); if(state.modules[m.key]){ i.className="on"; n++; } rail.appendChild(i);
+    var sec=el("mod-"+m.key); if(sec) sec.classList.toggle("done",!!state.modules[m.key]); });
+  PASSES.forEach(function(p){ var sec=el("pass-"+p.key); if(sec) sec.classList.toggle("done",!!state.passes[p.key]); });
+  el("railtext").textContent=lbl("railText",{n:n,m:total});
+  var next=PASSES.filter(function(p){return !state.passes[p.key];})[0];
+  PASSES.forEach(function(p){ var li=document.querySelector('.rungs li[data-r="'+p.key+'"]'); if(!li) return;
+    li.classList.toggle("ok",!!state.passes[p.key]); li.classList.toggle("on",!!next&&next.key===p.key); });
+}
+function paintTeacher(){
+  var bar=el("reviewbar"); bar.hidden=!TEACHER; if(!TEACHER) return;
+  el("rvtitle").textContent=L.teacherTitle; el("rvsub").textContent=lbl("teacherSub",{layer:layerName()});
+  el("rvreset").textContent=L.reset;
+}
+el("rvreset").addEventListener("click",function(){ state={passes:{},modules:{},speed:state.speed}; save(); paint(); });
+
+function buildPage(){
+  el("eyebrow").textContent=M.meta.eyebrow||(M.meta.course+" · "+M.meta.unit);
+  el("h1").textContent=M.meta.title; el("sub").textContent=M.meta.sub||"";
+  el("deskTitle").textContent=L.deskTitle; el("deskIntro").innerHTML=L.deskIntro;
+  el("slabTop").textContent=M.meta.eyebrow?M.meta.eyebrow.split("·").slice(0,2).join("·").trim():M.meta.course;
+  el("slabTitle").textContent=M.meta.title; el("slabBottom").textContent=M.meta.unit||""; el("slabOpen").textContent=L.openBook;
+  el("bandText").innerHTML=L.bandText;
+  el("howtoTitle").textContent=L.howtoTitle;
+  el("howtoBody").innerHTML=(Array.isArray(L.howto)?L.howto:[L.howto]).map(function(p){return "<p>"+p+"</p>";}).join("");
+  var r=el("rungs"); r.innerHTML="";
+  PASSES.forEach(function(p,i){ var li=document.createElement("li"); li.dataset.r=p.key;
+    li.innerHTML='<button type="button" data-pass="'+esc(p.key)+'"><b>'+(i+1)+'</b><span>'+esc(p.title)+'</span></button>'; r.appendChild(li); });
+  var h='<h3 class="stackhd">'+esc(L.passesHead)+'</h3><p class="stacksub">'+esc(L.passesSub)+'</p>';
+  PASSES.forEach(function(p,i){
+    h+='<section class="mod book" id="pass-'+esc(p.key)+'" style="--c:var(--ac)"><button class="mhead" data-pass="'+esc(p.key)+'"><span class="mnum">'+(i+1)+'</span>'+
+       '<span class="mtitle"><b>'+esc(p.title)+'</b><span>'+esc(p.how||"")+'</span></span><span class="chev">'+esc(L.openTheBook)+'</span></button></section>';
+  });
+  h+='<h3 class="stackhd">'+esc(L.modulesHead)+'</h3><p class="stacksub">'+esc(L.modulesSub)+'</p>';
+  MODS.forEach(function(m,i){
+    var n=m.kind==="order"?(m.items||[]).length+" events":(m.items||[]).length+" tasks";
+    h+='<section class="mod leaf-mod" id="mod-'+esc(m.key)+'" style="--c:'+(COLOURS[m.colour]||COLOURS.ac)+'"><button class="mhead" data-leaf="'+esc(m.key)+'"><span class="mnum">'+(PASSES.length+i+1)+'</span>'+
+       '<span class="mtitle"><b>'+esc(m.title)+'</b><span>'+esc((KINDLBL[m.kind]||m.kind)+" · "+n)+'</span></span><span class="chev">'+esc(L.openTheLeaf)+'</span></button></section>';
+  });
+  el("stack").innerHTML=h;
+  el("foot").innerHTML=esc(M.meta.course+" · "+M.meta.unit+" · "+M.meta.school)+"<br>"+esc(L.footer);
+  el("bclose").textContent=L.closeBook; el("prestart").textContent="↺ "+L.restart;
+  el("lbook").textContent=L.openBookShort; el("lclose").textContent=L.close;
+  el("tabText").textContent=L.theStory; el("tabEx").textContent=L.theTasks;
+  el("lcheck").textContent=L.check; el("ldone").textContent=L.finish;
+  el("gsheetHd").textContent=L.wordHelp; el("gclose").textContent=L.close; el("ghear").textContent="🔊 "+L.hearIt;
+  if(!REC_OK) document.documentElement.classList.add("norec");
+  paintSpeed(); paintPlay();
+}
+if(!REC_OK){ var st=document.createElement("style"); st.textContent=".norec [data-rec]{display:none}"; document.head.appendChild(st); }
+document.addEventListener("click",function(e){
+  var bk=e.target.closest("[data-pass]"); if(bk){ openBook(bk.dataset.pass); return; }
+  var lf=e.target.closest("[data-leaf]"); if(lf){ openLeaf(lf.dataset.leaf); return; }
+});
+el("bookobj").addEventListener("click",function(){
+  var next=PASSES.filter(function(p){return !state.passes[p.key];})[0]||PASSES[PASSES.length-1]; openBook(next?next.key:"alone");
+});
+buildPage(); paint(); paintTeacher();
+window.__chapter={state:function(){return state;},audio:A,sentences:SENT,layer:function(){return A.layer||decideLayer();}};
+})();
+</script>
+</body>
+</html>
