@@ -40,7 +40,7 @@
 :root{--ui:'Noto Naskh Arabic','Geeza Pro','Segoe UI','Arial',sans-serif}
 /* ---- language layer: an edition's chrome may be RTL; the English story and every English task item stay LTR ---- */
 [dir=rtl] :is(.flow,.ltext,.xq,.xword,.xline,.xgap,.opts,.opt,.pool,.seq,.xmodel,.xta,.xwhy,.sheetin,.recout,.story,.slab){direction:ltr;text-align:left}
-[dir=rtl] .chead :is(.eyebrow,h1,.sub){direction:ltr;text-align:left}
+[dir=rtl] .chead :is(.eyebrow,h1,.sub){direction:ltr;text-align:left;margin-left:0;margin-right:auto}
 .langbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
 .langbar a{display:inline-flex;align-items:center;min-height:36px;padding:6px 13px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);
   color:#fff;text-decoration:none;font-weight:700;font-size:var(--fs-sm)}
